@@ -13,7 +13,7 @@
 [nsp]: https://nostarch.com/
 
 <!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
-러스트라는 프로그래밍 언어 입문서인 *The Rust Programming Language*에 오신 것을 환영합니다.
+러스트 입문서인 *The Rust Programming Language*에 오신 것을 환영합니다.
 <!-- The Rust programming language helps you write faster, more reliable software.-->
 러스트 프로그래밍 언어는 여러분이 더 빠르고 안정적인 소프트웨어를 작성할 수 있도록 도와줍니다.
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
