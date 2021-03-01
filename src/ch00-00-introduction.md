@@ -13,7 +13,7 @@
 [nsp]: https://nostarch.com/
 
 <!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
-러스트 입문서인 *The Rust Programming Language*에 오신 것을 환영합니다.
+Rust(이하 러스트) 입문서인 *The Rust Programming Language*에 오신 것을 환영합니다.
 <!-- The Rust programming language helps you write faster, more reliable software.-->
 러스트 프로그래밍 언어는 여러분이 더 빠르고 안정적인 소프트웨어를 작성할 수 있도록 도와줍니다.
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
@@ -48,10 +48,8 @@ Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 
   compiling, and managing dependencies painless and consistent across the Rust
   ecosystem.-->
 * 의존성(dependency)관리 및 빌드 도구인 Cargo를 사용하여 의존성을 추가, 컴파일, 관리 등을 고통없이 일관성 있게 처리할 수 있습니다.
- 
 <!--* Rustfmt ensures a consistent coding style across developers.-->
 * Rustfmt는 개발자들 사이에 일관된 코딩 스타일을 보장합니다.
-
 <!--* The Rust Language Server powers Integrated Development Environment (IDE)
   integration for code completion and inline error messages.-->
 * 러스트 언어 서버(Rust Language Server)는 코드 자동완성과 인라인 에러 메시지를 통합한 개발환경(IDE)를 제공합니다.
