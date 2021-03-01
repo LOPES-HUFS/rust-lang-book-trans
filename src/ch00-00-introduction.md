@@ -5,6 +5,9 @@
 > Language][nsprust] available in print and ebook format from [No Starch
 > Press][nsp].
 -->
+
+주: 이 책의 이번 에디션은 [No Starch Press][nsp] 에서 이북 형식과 인쇄본으로 제공하는 [The Rust Programming Language]과 같은 에디션이다.
+
 [nsprust]: https://nostarch.com/rust
 [nsp]: https://nostarch.com/
 
