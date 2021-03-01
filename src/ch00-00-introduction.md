@@ -11,10 +11,13 @@
 [nsprust]: https://nostarch.com/rust
 [nsp]: https://nostarch.com/
 
-<!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.--> 
-*The Rust Programming Language*, 러스트라는 프로그래밍 언어를 소개하는 책에 오신 것을 환영합니다. <!-- The Rust programming language helps you write faster, more reliable software.-->
-이 책(The Rust programming language)은 여러분에게  <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
-여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며, 메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다. <!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
+<!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
+*The Rust Programming Language*, 러스트라는 프로그래밍 언어를 소개하는 책에 오신 것을 환영합니다.
+<!-- The Rust programming language helps you write faster, more reliable software.-->
+이 책(The Rust programming language)은 여러분에게 
+<!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
+여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며, 메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다.
+<!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
 비록 
 
 <!-- ## Who Rust Is For -->
@@ -87,14 +90,17 @@ ambition is to eliminate the trade-offs that programmers have accepted for
 decades by providing safety *and* productivity, speed *and* ergonomics. Give
 Rust a try and see if its choices work for you.
 
-## Who This Book Is For
+<!-- ## Who This Book Is For -->
+## 이 책은 어떤 사람을 위한 책인가요?
 
-This book assumes that you’ve written code in another programming language but
-doesn’t make any assumptions about which one. We’ve tried to make the material
-broadly accessible to those from a wide variety of programming backgrounds. We
-don’t spend a lot of time talking about what programming *is* or how to think
-about it. If you’re entirely new to programming, you would be better served by
-reading a book that specifically provides an introduction to programming.
+<!-- This book assumes that you’ve written code in another programming language but doesn’t make any assumptions about which one. -->
+이 책은 여러분이 이미 다른 프로그래밍 언어 코드를 작성해 봤다는 것을 가정하고 있지만, 그 언어가 어떤 것인지 상관하지 않습니다.
+<!-- We’ve tried to make the material broadly accessible to those from a wide variety of programming backgrounds. -->
+우리는 따라서 이 책에선 프로그래밍이라는 게 무엇인지, 어떤 자세로 코드를 작성해야 하는지 길게 설명하지 않을 겁니다.
+<!-- We don’t spend a lot of time talking about what programming *is* or how to think about it. -->
+우리는 
+<!-- If you’re entirely new to programming, you would be better served by reading a book that specifically provides an introduction to programming. -->
+만약 여러분이 전적으로 프로그래밍이 새롭다면, 프로그래밍를 상세하게 소개하는 책을 읽고 오시면 저 좋을 것입니다.
 
 ## How to Use This Book
 
