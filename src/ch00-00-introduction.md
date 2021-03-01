@@ -58,7 +58,7 @@ Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 
 
 <!--By using these and other tools in the Rust ecosystem, developers can be
 productive while writing systems-level code.-->
-위의 도구들과 러스트 생태계의 다른 도구들까지 사용함으로써, 개발자들은 저수준 코드를 더욱 생산적으로 작성할 수 있다.
+위의 도구들과 러스트 생태계의 다른 도구들까지 사용함으로써, 개발자들은 저수준 코드를 더욱 생산적으로 작성할 수 있습니다.
 
 ### Students
 
