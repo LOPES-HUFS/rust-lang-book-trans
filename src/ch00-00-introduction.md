@@ -47,14 +47,18 @@ Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 
 <!--* Cargo, the included dependency manager and build tool, makes adding,
   compiling, and managing dependencies painless and consistent across the Rust
   ecosystem.-->
-* 의존성(dependency)관리 및 빌드 도구인 Cargo를 사용하여 
+* 의존성(dependency)관리 및 빌드 도구인 Cargo를 사용하여 의존성을 추가, 컴파일, 관리 등을 고통없이 일관성 있게 처리할 수 있습니다.
  
-* Rustfmt ensures a consistent coding style across developers.
-* The Rust Language Server powers Integrated Development Environment (IDE)
-  integration for code completion and inline error messages.
+<!--* Rustfmt ensures a consistent coding style across developers.-->
+* Rustfmt는 개발자들 사이에 일관된 코딩 스타일을 보장합니다.
 
-By using these and other tools in the Rust ecosystem, developers can be
-productive while writing systems-level code.
+<!--* The Rust Language Server powers Integrated Development Environment (IDE)
+  integration for code completion and inline error messages.-->
+* 러스트 언어 서버(Rust Language Server)는 코드 자동완성과 인라인 에러 메시지를 통합한 개발환경(IDE)를 제공합니다.
+
+<!--By using these and other tools in the Rust ecosystem, developers can be
+productive while writing systems-level code.-->
+위의 도구들과 러스트 생태계의 다른 도구들까지 사용함으로써, 개발자들은 저수준 코드를 더욱 생산적으로 작성할 수 있다.
 
 ### Students
 
