@@ -39,7 +39,7 @@ Rust는 다양한 수준의 시스템 프로그래밍 지식을 가지고 있는
 <!--In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.-->
 Rust에서는 컴파일러가 동시성 버그와 같이 찾기 힘든 버그들을 포함한 코드들을 거부함으로써 문지기와 같은 역할을 합니다.
 <!--By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.-->ㅋ
-컴파일러와 함
+컴파일러와 함께 일하는 일함으로써, 팀은 버그를 쫒는 대신 프로그램의 로직에 집중하며 시간을 쓸 수 있습니다.
 
 Rust also brings contemporary developer tools to the systems programming world:
 
