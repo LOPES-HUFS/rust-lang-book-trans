@@ -12,28 +12,34 @@
 [nsp]: https://nostarch.com/
 
 <!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
+*The Rust Programming Language*, 러스트라는 프로그래밍 언어를 소개하는 책에 오신 것을 환영합니다.
 <!-- The Rust programming language helps you write faster, more reliable software. -->
+이 책(The Rust programming language)은 여러분에게 
 <!-- High-level ergonomics and low-level control are often at odds in programming
 language design; Rust challenges that conflict. -->
+여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며, 메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다.
 <!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option
 to control low-level details (such as memory usage) without all the hassle
 traditionally associated with such control. -->
+비록 
 
-## Who Rust Is For
+<!-- ## Who Rust Is For -->
+## Rust는 누구를 위한 것인가요?
 
-Rust is ideal for many people for a variety of reasons. Let’s look at a few of
-the most important groups.
+<!-- Rust is ideal for many people for a variety of reasons. -->
+러스트는 다양한 이유로 많은 사람들에게 이상적입니다.
+<!-- Let’s look at a few of the most important groups. -->
+가장 중요한 몇몇 그룹을 살펴보겠습니다.
 
-### Teams of Developers
+<!-- ### Teams of Developers -->
+### 개발자들 팀
 
-Rust is proving to be a productive tool for collaborating among large teams of
-developers with varying levels of systems programming knowledge. Low-level code
-is prone to a variety of subtle bugs, which in most other languages can be
-caught only through extensive testing and careful code review by experienced
-developers. In Rust, the compiler plays a gatekeeper role by refusing to
-compile code with these elusive bugs, including concurrency bugs. By working
-alongside the compiler, the team can spend their time focusing on the program’s
-logic rather than chasing down bugs.
+<!-- Rust is proving to be a productive tool for collaborating among large teams of developers with varying levels of systems programming knowledge. -->
+Rust는 타당한 시스템 프로그래밍 지식의 수준을 가지고 있는 거대한 개발자 팀들 사이에서 협업하기 위한 효과적인 도구임을 입증하고 있습니다.
+<!-- Low-level code is prone to a variety of subtle bugs, which in most other languages can be caught only through extensive testing and careful code review by experienced developers. -->
+저수준(Low-level) 코드는 
+In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.
+By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.
 
 Rust also brings contemporary developer tools to the systems programming world:
 
