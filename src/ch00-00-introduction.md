@@ -19,7 +19,7 @@
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
 고수준의 사용편의성(ergonomics)과 저수준의 제어는 종종 프로그래밍 언어를 설계하는 데 있어 상충됩니다. 러스트는 이 문제에 도전합니다.
 <!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
-강력한 기술 능력과 훌륭한 개발자들 경험을 적절히 반영하여, 러스트는 여러분에게 번거로움 없이 저수준의 디테일들(메모리 사용과 같은)을 제어할 수 있는 옵션을 제공합니다.
+강력한 기술 능력과 훌륭한 개발자들 경험을 통해, 러스트는 여러분에게 번거로움 없이 저수준의 디테일들(메모리 사용과 같은)을 제어할 수 있는 옵션을 제공합니다.
 
 <!-- ## Who Rust Is For -->
 ## Rust는 누구를 위한 것인가요?
