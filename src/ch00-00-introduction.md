@@ -11,9 +11,8 @@
 [nsprust]: https://nostarch.com/rust
 [nsp]: https://nostarch.com/
 
-<!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
-*The Rust Programming Language*, 러스트라는 프로그래밍 언어를 소개하는 책에 오신 것을 환영합니다.
-<!-- The Rust programming language helps you write faster, more reliable software.-->
+<!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.--> 
+*The Rust Programming Language*, 러스트라는 프로그래밍 언어를 소개하는 책에 오신 것을 환영합니다. <!-- The Rust programming language helps you write faster, more reliable software.-->
 이 책(The Rust programming language)은 여러분에게 
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
 여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며, 메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다.
