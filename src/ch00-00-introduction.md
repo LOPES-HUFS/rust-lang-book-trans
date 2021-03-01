@@ -106,11 +106,11 @@ Rust a try and see if its choices work for you.
 <!-- This book assumes that you’ve written code in another programming language but doesn’t make any assumptions about which one. -->
 이 책은 여러분이 이미 다른 프로그래밍 언어 코드를 작성해 봤다는 것을 가정하고 있지만, 그 언어가 어떤 것인지 상관하지 않습니다.
 <!-- We’ve tried to make the material broadly accessible to those from a wide variety of programming backgrounds. -->
-우리는 따라서 이 책에선 프로그래밍이라는 게 무엇인지, 어떤 자세로 코드를 작성해야 하는지 길게 설명하지 않을 겁니다.
+우리는 다양한 프로그래밍 배경을 가진 사람들이 광범위하게 이용할 수 있는 자료를 만들기 위해 노력했습니다.
 <!-- We don’t spend a lot of time talking about what programming *is* or how to think about it. -->
-우리는 
+우리는 프로그래밍이 무엇인지, 또는 어떻게 생각하는지에 대해 길게 설명하지 않습니다.
 <!-- If you’re entirely new to programming, you would be better served by reading a book that specifically provides an introduction to programming. -->
-만약 여러분이 전적으로 프로그래밍이 새롭다면, 프로그래밍를 상세하게 소개하는 책을 읽고 오시면 저 좋을 것입니다.
+만약 여러분이 프로그래밍을 처음으로 시작하는 거라면, 프로그래밍 입문서를 읽는 것이 더 좋은 선택일 것입니다.
 
 ## How to Use This Book
 
