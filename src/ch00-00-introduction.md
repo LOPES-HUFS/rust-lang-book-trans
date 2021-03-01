@@ -1,4 +1,4 @@
-## Introduction
+# Introduction
 
 <!--
 > Note: This edition of the book is the same as [The Rust Programming
