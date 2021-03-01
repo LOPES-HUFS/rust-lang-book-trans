@@ -41,11 +41,14 @@ Rust에서는 컴파일러가 동시성 버그와 같이 찾기 힘든 버그들
 <!--By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.-->
 컴파일러와 함께 일하는 일함으로써, 팀은 버그를 쫒는 대신 프로그램의 로직에 집중하는 데 시간을 할애할 수 있습니다.
 
-Rust also brings contemporary developer tools to the systems programming world:
+<!--Rust also brings contemporary developer tools to the systems programming world:-->
+Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 개발자 도구들을 제공합니다.
 
-* Cargo, the included dependency manager and build tool, makes adding,
+<!--* Cargo, the included dependency manager and build tool, makes adding,
   compiling, and managing dependencies painless and consistent across the Rust
-  ecosystem.
+  ecosystem.-->
+* 의존성(dependency)관리 및 빌드 도구인 Cargo를 사용하여 
+ 
 * Rustfmt ensures a consistent coding style across developers.
 * The Rust Language Server powers Integrated Development Environment (IDE)
   integration for code completion and inline error messages.
