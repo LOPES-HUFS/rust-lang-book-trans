@@ -33,11 +33,11 @@ Rust(이하 러스트) 입문서인 *The Rust Programming Language*에 오신 �
 ### 개발자 팀
 
 <!-- Rust is proving to be a productive tool for collaborating among large teams of developers with varying levels of systems programming knowledge. -->
-Rust는 다양한 수준의 시스템 프로그래밍 지식을 가지고 있는 대규모 개발자 팀들 사이에서 협업을 위한 생산적인 도구임을 입증하고 있습니다.
+러스트는 다양한 수준의 시스템 프로그래밍 지식을 가지고 있는 대규모 개발자 팀들 사이에서 협업을 위한 생산적인 도구임을 입증하고 있습니다.
 <!-- Low-level code is prone to a variety of subtle bugs, which in most other languages can be caught only through extensive testing and careful code review by experienced developers. -->
 저수준 코드는 다양한 종류의 버그들에 취약하기 때문에, 대부분 다른 언어들은 광범위한 테스트와 숙련된 개발자의 신중한 코드 리뷰를 통해서 버그들을 잡으려고 합니다.
 <!--In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.-->
-Rust에서는 컴파일러가 동시성 버그와 같이 찾기 힘든 버그들을 포함한 코드들을 거부함으로써 문지기와 같은 역할을 합니다.
+러스트에서는, 컴파일러가 동시성 버그와 같이 찾기 힘든 버그들을 포함한 코드들을 거부함으로써 문지기와 같은 역할을 합니다.
 <!--By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.-->
 컴파일러와 함께 일하는 일함으로써, 팀은 버그를 쫒는 대신 프로그램의 로직에 집중하는 데 시간을 할애할 수 있습니다.
 
