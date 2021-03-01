@@ -187,10 +187,10 @@ error. Ferris will also help you distinguish code that isn’t meant to work:
 
 | Ferris                                                                 | Meaning                                          |
 |------------------------------------------------------------------------|--------------------------------------------------|
-| <img src="img/ferris/does_not_compile.svg" class="ferris-explain"/>    | This code does not compile!                      |
-| <img src="img/ferris/panics.svg" class="ferris-explain"/>              | This code panics!                                |
-| <img src="img/ferris/unsafe.svg" class="ferris-explain"/>              | This code block contains unsafe code.            |
-| <img src="img/ferris/not_desired_behavior.svg" class="ferris-explain"/>| This code does not produce the desired behavior. |
+| <img src="img/ferris/does_not_compile.svg" class="ferris-explain"/>    | <!--This code does not compile!--> 컴파일 되지 않는 코드                    |
+| <img src="img/ferris/panics.svg" class="ferris-explain"/>              | <!--This code panics!--> panic이 발생하는 코드                                 |
+| <img src="img/ferris/unsafe.svg" class="ferris-explain"/>              | <!--This code block contains unsafe code.--> 안전하지 않은 코드를 포함           |
+| <img src="img/ferris/not_desired_behavior.svg" class="ferris-explain"/>| <!--This code does not produce the desired behavior.--> 의도된 결과가 나오지 않는 코드 |
 
 In most situations, we’ll lead you to the correct version of any code that
 doesn’t compile.
