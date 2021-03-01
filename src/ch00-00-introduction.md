@@ -39,7 +39,7 @@ Rust(이하 러스트) 입문서인 *The Rust Programming Language*에 오신 �
 <!--In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.-->
 러스트에서, 컴파일러가 동시성(concurrency) 버그와 같이 찾기 힘든 버그들을 포함하고 있는 코드들은 컴파일하는 것을 거부함으로써 문지기(gatekeeper)와 같은 역할을 수행합니다.
 <!--By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.-->
-컴파일러와 함께 일하는 일함으로써, 팀은 버그를 쫒는 대신 프로그램의 로직에 집중하는 데 시간을 할애할 수 있습니다.
+컴파일러를 옆에 두고 작업하기에, 팀은 버그를 쫒는 대신 프로그램의 로직에 집중하는 데 시간을 할애할 수 있습니다.
 
 <!--Rust also brings contemporary developer tools to the systems programming world:-->
 Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 개발자 도구들을 제공합니다.
