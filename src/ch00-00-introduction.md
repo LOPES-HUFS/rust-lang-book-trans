@@ -1,4 +1,4 @@
-# Introduction
+## Introduction
 
 <!--
 > Note: This edition of the book is the same as [The Rust Programming
@@ -13,13 +13,13 @@
 [nsp]: https://nostarch.com/
 
 <!-- Welcome to *The Rust Programming Language*, an introductory book about Rust.-->
-*The Rust Programming Language*, 러스트라는 프로그래밍 언어를  오신 것을 환영합니다.
+러스트라는 프로그래밍 언어 입문서인 *The Rust Programming Language*에 오신 것을 환영합니다.
 <!-- The Rust programming language helps you write faster, more reliable software.-->
-
+러스트 프로그래밍 언어는 여러분이 더 빠르고 안정적인 소프트웨어를 작성할 수 있도록 도와줍니다.
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
-여태 프로그래밍 언어 디자인에 있어 저수준(low-level) 제어와 고수준(high-level) 문법은 양립하기 어려웠으며, 메모리 제어 등 저수준을 세부적으로 제어할 땐 온갖 귀찮은 것들이 동반하는 것이 당연시되었습니다.
+고수준의 사용편의성(ergonomics)과 저수준의 제어는 종종 프로그래밍 언어를 설계하는 데 있어 상충됩니다. 러스트는 이 문제에 도전합니다.
 <!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
-비록 
+강력한 기술 능력과 훌륭한 개발자들 경험의 균형을 통해, 러스트는 여러분에게 번거로움 없이 저수준의 디테일들(메모리 사용과 같은)을 제어할 수 있는 옵션을 제공합니다.
 
 <!-- ## Who Rust Is For -->
 ## Rust는 누구를 위한 것인가요?
@@ -30,13 +30,14 @@
 가장 중요한 몇몇 그룹을 살펴보겠습니다.
 
 <!-- ### Teams of Developers -->
-### 개발자들 팀
+### 개발자 팀
 
 <!-- Rust is proving to be a productive tool for collaborating among large teams of developers with varying levels of systems programming knowledge. -->
-Rust는 타당한 시스템 프로그래밍 지식의 수준을 가지고 있는 거대한 개발자 팀들 사이에서 협업하기 위한 효과적인 도구임을 입증하고 있습니다.
+Rust는 다양한 수준의 시스템 프로그래밍 지식을 가지고 있는 대규모 개발자 팀들 사이에서 협업을 위한 생산적인 도구임을 입증하고 있습니다.
 <!-- Low-level code is prone to a variety of subtle bugs, which in most other languages can be caught only through extensive testing and careful code review by experienced developers. -->
-저수준(Low-level) 코드는 
-In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.
+저수준(Low-level) 코드는 다양한 종류의 감지하기 힘든 버그들에 취약하기 때문에, 대부분 다른 언어들은 광범위한 테스트와 숙련된 개발자의 신중한 코드 리뷰를 통해서 버그들을 잡으려고 합니다.
+<!--In Rust, the compiler plays a gatekeeper role by refusing to compile code with these elusive bugs, including concurrency bugs.-->
+Rust에서는 컴파일러가 동시성 버그와 같은 찾기 힘든 버그들을 포함한 코드들을 거부함으로써 문지기와 같은 역할을 합니다.
 By working alongside the compiler, the team can spend their time focusing on the program’s logic rather than chasing down bugs.
 
 Rust also brings contemporary developer tools to the systems programming world:
