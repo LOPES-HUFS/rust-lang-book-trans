@@ -18,8 +18,8 @@ Rust(이하 러스트) 입문서인 *The Rust Programming Language*에 오신 �
 러스트 프로그래밍 언어는 여러분이 더 빠르고 안정적인 소프트웨어를 작성할 수 있도록 도와줍니다.
 <!-- High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict. -->
 고수준의 사용편의성(ergonomics)과 저수준의 제어는 종종 프로그래밍 언어를 설계하는 데 있어 상충되지만; 러스트는 이런 불일치(conflict)에 도전합니다.
-<!--  Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
-강력한 기술 능력(capacity)과 아주 멋진 개발자 경험 사이의 균형을 맞추면서도, 러스트는 여러분에게 (메모리 사용과 같은) 저수준의 제어를 이런 제어와 관련된 전통적인 모든 혼란(hassle)없이 디테일하게 제어할 수 있는 옵션을 제공합니다.
+<!-- Through balancing powerful technical capacity and a great developer experience, Rust gives you the option to control low-level details (such as memory usage) without all the hassle traditionally associated with such control. -->
+강력한 기술 능력(capacity)과 아주 멋진 개발자 경험 사이의 균형을 맞추면서도, 러스트는 여러분에게 (메모리 사용과 같은) 저수준의 제어를 이와 관련된 전통적인 모든 혼란(hassle)없이 디테일하게 제어할 수 있는 옵션을 제공합니다.
 
 <!-- ## Who Rust Is For -->
 ## Rust는 누구를 위한 것인가요?
