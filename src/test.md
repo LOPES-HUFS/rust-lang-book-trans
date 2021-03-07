@@ -1,3 +1,3 @@
-# Getting Started<br>Let’s start your Rust journey! There’s a lot to learn, but every journey starts somewhere. In this chapter, we’ll discuss:<br>* Installing Rust on Linux, macOS, and Windows * Writing a program that prints `Hello, world!` * Using `cargo`, Rust’s package manager and build system
+Getting Started<br>Let’s start your Rust journey! There’s a lot to learn, but every journey starts somewhere. In this chapter, we’ll discuss:<br>* Installing Rust on Linux, macOS, and Windows * Writing a program that prints `Hello, world!` * Using `cargo`, Rust’s package manager and build system
 
-```console\nbsp;\nbsp;$ mkdir ~/projects\n\n$ cd ~/projects\n\n$ mkdir hello_world\n\n$ cd hello_world\n\n```\n\n
+```console<br>$ mkdir ~/projects<br>$ cd ~/projects<br>$ mkdir hello_world<br>$ cd hello_world<br>```<br>
