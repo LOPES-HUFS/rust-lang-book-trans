@@ -30,7 +30,7 @@ $ cd ~/projects
 $ mkdir hello_world
 $ cd hello_world
 ```
-```console\n$ mkdir ~/projects\n$ cd ~/projects\n$ mkdir hello_world\n$ cd hello_world\n```
+
 For Windows CMD, enter this:
 
 ```cmd
