@@ -1,10 +1,6 @@
 # Introduction
 
-<!--
-> Note: This edition of the book is the same as [The Rust Programming
-> Language][nsprust] available in print and ebook format from [No Starch
-> Press][nsp].
--->
+<!-- > Note: This edition of the book is the same as [The Rust Programming Language][nsprust] available in print and ebook format from [No Starch Press][nsp].-->
 
 > 주: 이 책은 [No Starch Press][nsp]에서 ebook 형식으로 제공하는 [The Rust 
 > Programming Language][nsprust]과 동일하며, 이를 한국어로 번역합니다.
