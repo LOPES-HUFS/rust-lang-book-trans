@@ -35,12 +35,11 @@ def spliter(lines):
 
 ## 현재까지의 진행 output
 
-```python3
+```
 > test= translator('ch00-00-introduction.md')
-
 ```
 
-```bash
+```
 > test[0:10]
 
 ['# Introduction ',
