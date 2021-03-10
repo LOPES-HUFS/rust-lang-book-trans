@@ -32,3 +32,25 @@ def spliter(lines):
         temp = re.split('\.[\s](?=[\w]+)',sen)
         lis += temp
     return lis
+
+## 현재까지의 진행 output
+
+```python
+> test= translator('ch00-00-introduction.md')
+
+```
+
+```
+> test[0:10]
+
+['# Introduction ',
+ ' ',
+ '> Note: This edition of the book is the same as [The Rust Programming > Language][nsprust] available in print and ebook format from [No Starch > Press][nsp]. ',
+ ' ',
+ '[nsprust]: https://nostarch.com/rust ',
+ '[nsp]: https://nostarch.com/ ',
+ ' ',
+ 'Welcome to *The Rust Programming Language*, an introductory book about Rust',
+ 'The Rust programming language helps you write faster, more reliable software',
+ 'High-level ergonomics and low-level control are often at odds in programming language design; Rust challenges that conflict']
+```
