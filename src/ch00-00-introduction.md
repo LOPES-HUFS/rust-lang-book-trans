@@ -108,7 +108,7 @@ productive while writing systems-level code.-->
 
 <!--The Rust language hopes to support many other users as well; those mentioned
 here are merely some of the biggest stakeholders. -->
-러스트는 지금까지 언급된 분야들 이외에도 많이 사용되기를 바랍니다; 지금까지 언급된 분야들은 러스트를 사용할 수 있는 것들의 극히 일부일 뿐입니다.
+러스트는 지금까지 언급된 분야들 이외에서도 많이 사용되기를 원합니다; 지금까지 언급된 분야들은 러스트를 사용할 수 있는 것들의 극히 일부일 뿐입니다.
 
 <!--Overall, Rust’s greatest ambition is to eliminate the trade-offs that programmers have accepted for decades by providing safety *and* productivity, speed *and* ergonomics.--> 
 전반적으로, 러스트의 가장 큰 목표는 생산성과 안전성, 속도와 사용편의성을 모두 제공함으로써 프로그래머들이 수십년동안 가져온 통념을 제거하는 것입니다.
@@ -128,17 +128,30 @@ here are merely some of the biggest stakeholders. -->
 <!-- If you’re entirely new to programming, you would be better served by reading a book that specifically provides an introduction to programming. -->
 만약 여러분이 프로그래밍을 처음으로 시작하는 거라면, 프로그래밍 입문서를 읽는 것이 더 좋은 선택일 것입니다.
 
-## How to Use This Book
+<!-- ## How to Use This Book -->
+## 이 책의 사용법
 
-In general, this book assumes that you’re reading it in sequence from front to
-back. Later chapters build on concepts in earlier chapters, and earlier
+<!-- In general, this book assumes that you’re reading it in sequence from front to
+back. -->
+일반적으로, 이 책은 처음부터 끝까지 순차적으로 읽는 것을 가정합니다.
+
+<!-- Later chapters build on concepts in earlier chapters, and earlier
 chapters might not delve into details on a topic; we typically revisit the
-topic in a later chapter.
+topic in a later chapter. -->
+그렇기에 이전 장에서 다뤘던 개념들이 다음 장에서도 나온다면, 우리는 세부적으로 설명하지 않습니다.
 
-You’ll find two kinds of chapters in this book: concept chapters and project
-chapters. In concept chapters, you’ll learn about an aspect of Rust. In project
-chapters, we’ll build small programs together, applying what you’ve learned so
-far. Chapters 2, 12, and 20 are project chapters; the rest are concept chapters.
+<!-- You’ll find two kinds of chapters in this book: concept chapters and project
+chapters. -->
+
+
+<!-- In concept chapters, you’ll learn about an aspect of Rust. -->
+
+
+<!-- In project chapters, we’ll build small programs together, applying what you’ve learned so far. -->
+
+
+<!-- Chapters 2, 12, and 20 are project chapters; the rest are concept chapters. -->
+
 
 Chapter 1 explains how to install Rust, how to write a “Hello, world!” program,
 and how to use Cargo, Rust’s package manager and build tool. Chapter 2 is a
