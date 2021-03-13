@@ -54,28 +54,36 @@ Rust는 또한 시스템 프로그래밍 세계에서 사용하는 현대적인 
 productive while writing systems-level code.-->
 위의 도구들과 러스트 생태계의 다른 도구들까지 사용함으로써, 개발자들은 저수준 코드를 더욱 생산적으로 작성할 수 있습니다.
 
-### Students
+<!--### Students-->
+### 학생
 
-Rust is for students and those who are interested in learning about systems
-concepts. Using Rust, many people have learned about topics like operating
-systems development. The community is very welcoming and happy to answer
-student questions. Through efforts such as this book, the Rust teams want to
-make systems concepts more accessible to more people, especially those new to
-programming.
+<!--Rust is for students and those who are interested in learning about systems concepts.-->
+러스트는 시스템 개념에 대해 관심있는 학생들에게도 적합합니다.
 
-### Companies
+<!--Using Rust, many people have learned about topics like operating systems development.-->
+많은 사람들이 러스트를 사용하여 
 
-Hundreds of companies, large and small, use Rust in production for a variety of
-tasks. Those tasks include command line tools, web services, DevOps tooling,
-embedded devices, audio and video analysis and transcoding, cryptocurrencies,
-bioinformatics, search engines, Internet of Things applications, machine
-learning, and even major parts of the Firefox web browser.
+<!--The community is very welcoming and happy to answer student questions.-->
 
-### Open Source Developers
+<!--Through efforts such as this book, the Rust teams want to make systems concepts more accessible to more people, especially those new to programming.-->
 
-Rust is for people who want to build the Rust programming language, community,
-developer tools, and libraries. We’d love to have you contribute to the Rust
-language.
+
+<!--### Companies-->
+### 회사
+
+<!--Hundreds of companies, large and small, use Rust in production for a variety of tasks.-->
+
+<!--Those tasks include command line tools, web services, DevOps tooling, embedded devices, audio and video analysis and transcoding, cryptocurrencies, bioinformatics, search engines, Internet of Things applications, machine learning, and even major parts of the Firefox web browser.-->
+
+
+<!--### Open Source Developers-->
+### 오픈 소스 개발자들
+
+<!--Rust is for people who want to build the Rust programming language, community, developer tools, and libraries.-->
+ 러스트는 프로그래밍 언어, 커뮤니티, 개발자 툴, 라이브러리를 만들고자 하는 사람들에게도 적합한 언어입니다.
+
+<!--We’d love to have you contribute to the Rust language.-->
+우리는 러스트 언어 발전에 기여하는 모든 이들을 환영합니다.
 
 ### People Who Value Speed and Stability
 
