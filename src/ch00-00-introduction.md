@@ -61,20 +61,22 @@ productive while writing systems-level code.-->
 러스트는 시스템 개념에 대해 관심있는 학생들에게도 적합합니다.
 
 <!--Using Rust, many people have learned about topics like operating systems development.-->
-많은 사람들이 러스트를 사용하여 
+많은 사람들이 러스트를 사용하여 운영체제 개발과 같은 주제들을 공부해왔습니다.
 
 <!--The community is very welcoming and happy to answer student questions.-->
+커뮤티니 또한 학생들을 환영하며, 그들의 질문에 대해 친절하게 답변합니다.
 
 <!--Through efforts such as this book, the Rust teams want to make systems concepts more accessible to more people, especially those new to programming.-->
-
+이 책과 같은 노력들을 통해, 러스트 팀은 더 많은 사람, 특히 프로그래밍 입문자들이 시스템 개념들에 더 쉽게 다가갈 수 있기를 바랍니다.
 
 <!--### Companies-->
 ### 회사
 
 <!--Hundreds of companies, large and small, use Rust in production for a variety of tasks.-->
+회사의 규모와 상관없이 수많은 회사들이 제품 생산을 위한 다양한 작업에 러스트를 사용하고 있습니다.
 
 <!--Those tasks include command line tools, web services, DevOps tooling, embedded devices, audio and video analysis and transcoding, cryptocurrencies, bioinformatics, search engines, Internet of Things applications, machine learning, and even major parts of the Firefox web browser.-->
-
+그런 작업들은 커맨드 라인 도구나, 웹 서비스, 데브옵스 도구화, 임베디드 디바이스, 오디오 및 비디오 분석과 트랜스코딩, 암호화, 생물정보학, 검색 엔진, IoT 애플리케이션, 머신 러닝, 심지어 파이어폭스 웹 브라우져의 주요한 부분까지 포함합니다.
 
 <!--### Open Source Developers-->
 ### 오픈 소스 개발자들
@@ -85,16 +87,25 @@ productive while writing systems-level code.-->
 <!--We’d love to have you contribute to the Rust language.-->
 우리는 러스트 언어 발전에 기여하는 모든 이들을 환영합니다.
 
-### People Who Value Speed and Stability
+<!--### People Who Value Speed and Stability-->
+### 속도와 안전성을 중시하는 사람
 
-Rust is for people who crave speed and stability in a language. By speed, we
-mean the speed of the programs that you can create with Rust and the speed at
-which Rust lets you write them. The Rust compiler’s checks ensure stability
-through feature additions and refactoring. This is in contrast to the brittle
-legacy code in languages without these checks, which developers are often
-afraid to modify. By striving for zero-cost abstractions, higher-level features
-that compile to lower-level code as fast as code written manually, Rust
-endeavors to make safe code be fast code as well.
+<!--Rust is for people who crave speed and stability in a language.-->
+러스트는 속도와 안전성을 중시하는 사람들에게 적합합니다.
+
+<!--By speed, we mean the speed of the programs that you can create with Rust and the speed at which Rust lets you write them.-->
+여기서 속도란, 프로그램을 러스트로 작성하는 속도와 러스트로 만들어진 프로그램의 속도 모두를 지칭합니다.
+
+<!--The Rust compiler’s checks ensure stability through feature additions and refactoring.-->
+러스트 컴파일러의 검증은 기능 추가와 리팩토링을 통해 안정성을 보장합니다.
+
+<!--This is in contrast to the brittle legacy code in languages without these checks, which developers are often afraid to modify.-->
+이것은 
+
+<!--This is in contrast to the brittle legacy code in languages without these checks, which developers are often afraid to modify.-->
+
+<!--By striving for zero-cost abstractions, higher-level features that compile to lower-level code as fast as code written manually, Rust endeavors to make safe code be fast code as well.-->
+
 
 The Rust language hopes to support many other users as well; those mentioned
 here are merely some of the biggest stakeholders. Overall, Rust’s greatest
