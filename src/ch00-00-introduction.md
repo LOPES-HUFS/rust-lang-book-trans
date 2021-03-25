@@ -214,13 +214,15 @@ confusion. But do whatever works for you.
 
 <span id="ferris"></span>
 
-An important part of the process of learning Rust is learning how to read the
-error messages the compiler displays: these will guide you toward working code.
-As such, we’ll provide many examples that don’t compile along with the error
-message the compiler will show you in each situation. Know that if you enter
-and run a random example, it may not compile! Make sure you read the
-surrounding text to see whether the example you’re trying to run is meant to
-error. Ferris will also help you distinguish code that isn’t meant to work:
+<!--An important part of the process of learning Rust is learning how to read the
+error messages the compiler displays: these will guide you toward working code.-->
+해당 과정 중에 가장 중요한 부분은 컴파일러의 에러 메시지 읽는 방법을 배우는 것입니다: 이것만 잘해도 잘 작동하는 코드를 작성할 수 있습니다.
+<!--As such, we’ll provide many examples that don’t compile along with the error message the compiler will show you in each situation.-->
+따라서, 우리는
+<!--Know that if you enter and run a random example, it may not compile! Make sure you read the surrounding text to see whether the example you’re trying to run is meant to
+error. -->
+
+<!--Ferris will also help you distinguish code that isn’t meant to work:-->
 
 | Ferris                                                                 | Meaning                                          |
 |------------------------------------------------------------------------|--------------------------------------------------|
@@ -231,8 +233,7 @@ error. Ferris will also help you distinguish code that isn’t meant to work:
 
 <!--In most situations, we’ll lead you to the correct version of any code that
 doesn’t compile.-->
-책 내용
-책 ㄷ
+책 내용 대부분은 컴파일되지 않은 코드를 올바르게 수정하는 과정들을 보여줍니다.
 
 <!--## Source Code-->
 ## 소스코드
