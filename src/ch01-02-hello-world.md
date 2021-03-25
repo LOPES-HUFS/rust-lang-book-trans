@@ -1,10 +1,10 @@
 ## HELLO WORLD
 
-<!--Now that you’ve installed Rust, let’s write your first Rust program.-->
-이제 당신은 러스트 설치를 마쳤으니, 당신의 첫번째 러스트 프로그램을 작성해봅시다.
+<!-- Now that you’ve installed Rust, let’s write your first Rust program. -->
+이제 러스트 설치를 마쳤으니, 여러분의 첫 번째 러스트 프로그램을 작성해봅시다.
 
-<!--It’s traditional when learning a new language to write a little program that prints the text Hello world! to the screen, so we’ll do the same here!-->
-새로운 언어를 배울때 전통인 스크린에 Hello, world! 라는 텍스트를 출력하는 작은 프로그램을 작성하는 것입니다. 그래서 우리는 여기서 같은 것을 할겁니다.
+<!-- It’s traditional when learning a new language to write a little program that prints the text `Hello world!` to the screen, so we’ll do the same here! -->
+전통적으로 새로운 (번역자 주: 프로그래밍) 언어를 배울때 스크린에 `Hello, world!`라는 텍스트를 출력하는 작은 프로그램을 작성하기에, 우리도 여기서 그와 같은 같은 것을 해 볼 것입니다!
 
 > Note: This book assumes basic familiarity with the command line.
 Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니다.
@@ -17,10 +17,10 @@ Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니�
 
 ### 프로젝트 디렉토리 만들기(Creating a Project Directory)
 
-<!--You’ll start by making a directory to store your Rust code.-->
-당신은 당신의 러스트 코드들을 저장하기 위한 디렉토리를 만드는 것부터 시작할 것입니다.
+<!-- You’ll start by making a directory to store your Rust code. -->
+여러분은 여러분의 러스트 코드을 저장하기 위한 디렉토리를 만드는 것부터 시작할 것입니다.
 <!--It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a *projects* directory in your home directory and keeping all your projects there.-->
-코드가 어디에 있는지는 러스트에 중요하진 않습니다만, 이 책에서 프로젝트들과 훈련들을 위해 우리는 *projects* 디렉토리를 너의 홈(home) 디렉토리에 만들고, 모든 당신의 프로젝트들을 거기에 유지하는 것을 제안하는 바이다.
+여러분의 코드가 어디에서 살고 있는지 러스트에는 중요하진 않지만, 그러나 프로젝트들과 훈련들을 위해서 이 책에서는, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 어러분의 모든 프로젝트들을 거기에 유지하는 제안합니다.
 
 <!--Open a terminal and enter the following commands to make a *projects* directory and a directory for the “Hello, world!” project within the *projects* directory.-->
 터미널을 열고 아래의 커맨드들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
