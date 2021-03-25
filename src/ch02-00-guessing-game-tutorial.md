@@ -122,7 +122,7 @@ let mut bar = 5; // mutable
  
 <!--Let’s return to the guessing game program-->
 <!--You now know that `let mut guess` will introduce a mutable variable named `guess`-->
-<!--On the other side of the equal sign (`=`) is the value that `guess` is bound to, which is the result of calling `String::new`, a function that returns a new instance of a `String`. [`String`][string]<!-- ignore --> is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text. -->
+<!--On the other side of the equal sign (`=`) is the value that `guess` is bound to, which is the result of calling `String::new`, a function that returns a new instance of a `String`. [`String`][string] is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text. -->
  
 [string]: ../std/string/struct.String.html 
  
@@ -143,13 +143,15 @@ let mut bar = 5; // mutable
 ``` 
  
 <!--If we hadn’t put the `use std::io` line at the beginning of the program, we could have written this function call as `std::io::stdin`-->
-<!--The `stdin` function returns an instance of [`std::io::Stdin`][iostdin]<!-- ignore -->, which is a type that represents a handle to the standard input for your terminal.  -->
+<!--The `stdin` function returns an instance of [`std::io::Stdin`][iostdin], which is a type that represents a handle to the standard input for your terminal.  -->
 [iostdin]: ../std/io/struct.Stdin.html 
  
-<!--The next part of the code, `.read_line(&mut guess)`, calls the [`read_line`][read_line]<!-- ignore --> method on the standard input handle to get input from the user-->
+<!--The next part of the code, `.read_line(&mut guess)`, calls the [`read_line`][read_line] method on the standard input handle to get input from the user-->
+
 <!--We’re also passing one argument to `read_line`: `&mut guess`. -->
  
 [read_line]: ../std/io/struct.Stdin.html#method.read_line  
+
 <!--The job of `read_line` is to take whatever the user types into standard input and append that into a string (without overwriting its contents), so it takes that string as an argument-->
 <!--The string argument needs to be mutable so the method can change the string’s content by adding the user input.  -->
 <!--The `&` indicates that this argument is a *reference*, which gives you a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times-->
@@ -172,13 +174,14 @@ let mut bar = 5; // mutable
 <!--We could have written this code as: -->
  
 ```rust,ignore 
-io::stdin().read_line(&mut guess).expect("Failed to read line"); ``` 
+io::stdin().read_line(&mut guess).expect("Failed to read line");
+``` 
  
 <!--However, one long line is difficult to read, so it’s best to divide it-->
 <!--Now let’s discuss what this line does. -->
  
-<!--As mentioned earlier, `read_line` puts what the user types into the string we’re passing it, but it also returns a value—in this case, an [`io::Result`][ioresult]<!-- ignore -->-->
-<!--Rust has a number of types named `Result` in its standard library: a generic [`Result`][result]<!-- ignore --> as well as specific versions for submodules, such as `io::Result`.  -->
+<!--As mentioned earlier, `read_line` puts what the user types into the string we’re passing it, but it also returns a value—in this case, an [`io::Result`][ioresult]-->
+<!--Rust has a number of types named `Result` in its standard library: a generic [`Result`][result]as well as specific versions for submodules, such as `io::Result`.  -->
 [ioresult]: ../std/io/type.Result.html 
 [result]: ../std/result/enum.Result.html 
  
@@ -194,7 +197,7 @@ io::stdin().read_line(&mut guess).expect("Failed to read line"); ```
  
 <!--The purpose of these `Result` types is to encode error-handling information-->
 <!--Values of the `Result` type, like values of any type, have methods defined on them-->
-<!--An instance of `io::Result` has an [`expect` method][expect]<!-- ignore --> that you can call-->
+<!--An instance of `io::Result` has an [`expect` method][expect] that you can call-->
 <!--If this instance of `io::Result` is an `Err` value, `expect` will cause the program to crash and display the message that you passed as an argument to `expect`-->
 <!--If the `read_line` method returns an `Err`, it would likely be the result of an error coming from the underlying operating system-->
 <!--If this instance of `io::Result` is an `Ok` value, `expect` will take the return value that `Ok` is holding and return just that value to you so you can use it-->
@@ -203,6 +206,7 @@ io::stdin().read_line(&mut guess).expect("Failed to read line"); ```
 [expect]: ../std/result/enum.Result.html#method.expect 
  
 <!--If you don’t call `expect`, the program will compile, but you’ll get a warning:  -->
+
 ```console 
 {{#include ../listings/ch02-guessing-game-tutorial/no-listing-02-without-expect/output.txt}} 
 ``` 
@@ -245,10 +249,10 @@ input 6 -->
 ```console 
 $ cargo run 
    Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 6.44s      Running `target/debug/guessing_game` 
-<!--Guess the number! -->
-<!--Please input your guess. -->
+Guess the number!
+Please input your guess.
 6 
-<!--You guessed: 6 -->
+You guessed: 6
 ``` 
  
 <!--At this point, the first part of the game is done: we’re getting input from the keyboard and then printing it. -->
@@ -275,17 +279,17 @@ $ cargo run
  
 <!-- When updating the version of `rand` used, also update the version of `rand` used in these files so they all match: 
 <!--* ch07-04-bringing-paths-into-scope-with-the-use-keyword.md * ch14-03-cargo-workspaces.md -->
---> 
  
 <span class="filename">Filename: Cargo.toml</span> 
  
 ```toml 
-{{#include ../listings/ch02-guessing-game-tutorial/listing-02-02/Cargo.toml:9:}} ``` 
+{{#include ../listings/ch02-guessing-game-tutorial/listing-02-02/Cargo.toml:9:}}
+``` 
  
 <!--In the *Cargo.toml* file, everything that follows a header is part of a section that continues until another section starts-->
 <!--The `[dependencies]` section is where you tell Cargo which external crates your project depends on and which versions of those crates you require-->
 <!--In this case, we’ll specify the `rand` crate with the semantic version specifier `0.8.3`-->
-<!--Cargo understands [Semantic Versioning][semver]<!-- ignore --> (sometimes called *SemVer*), which is a standard for writing version numbers-->
+<!--Cargo understands [Semantic Versioning][semver](sometimes called *SemVer*), which is a standard for writing version numbers-->
 <!--The number `0.8.3` is actually shorthand for `^0.8.3`, which means any version that is at least `0.8.3` but below `0.9.0`-->
 <!--Cargo considers these versions to have public APIs compatible with version `0.8.3`, and this specification ensures you'll get the latest patch release that will still compile with the code in this chapter-->
 <!--Any version `0.9.0` or greater is not guaranteed to have the same API as what the following examples use. -->
@@ -316,7 +320,8 @@ $ cargo build
    Compiling ppv-lite86 v0.2.10 
    Compiling rand_chacha v0.3.0 
    Compiling rand v0.8.3 
-   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 2.53s ``` 
+   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 2.53s
+ ``` 
  
 <span class="caption">Listing 2-2: The output from running `cargo build` after adding the rand crate as a dependency</span> 
  
@@ -345,7 +350,9 @@ cargo build -->
  
 ```console 
 $ cargo build 
-   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 2.53 secs ``` 
+   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)
+    Finished dev [unoptimized + debuginfo] target(s) in 2.53 secs
+``` 
  
 <!--These lines show Cargo only updates the build with your tiny change to the *src/main.rs* file-->
 <!--Your dependencies haven’t changed, so Cargo knows it can reuse what it has already downloaded and compiled for those-->
