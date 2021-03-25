@@ -229,12 +229,16 @@ error. Ferris will also help you distinguish code that isn’t meant to work:
 | <img src="img/ferris/unsafe.svg" class="ferris-explain"/>              | <!--This code block contains unsafe code.--> 안전하지 않은 코드를 포함           |
 | <img src="img/ferris/not_desired_behavior.svg" class="ferris-explain"/>| <!--This code does not produce the desired behavior.--> 의도된 결과가 나오지 않는 코드 |
 
-In most situations, we’ll lead you to the correct version of any code that
-doesn’t compile.
+<!--In most situations, we’ll lead you to the correct version of any code that
+doesn’t compile.-->
+책 내용
+책 ㄷ
 
-## Source Code
+<!--## Source Code-->
+## 소스코드
 
-The source files from which this book is generated can be found on
-[GitHub][book].
+<!--The source files from which this book is generated can be found on
+[GitHub][book].-->
+이 책에서 사용되는 소스코드 파일은 [GitHub][book]에서 찾으실 수 있습니다.
 
 [book]: https://github.com/rust-lang/book/tree/master/src
