@@ -362,11 +362,17 @@ $ cargo build
 <!--In other words, your project will remain at `0.8.3` until you explicitly upgrade, thanks to the *Cargo.lock* file. -->
  
 <!--#### Updating a Crate to Get a New Version -->
+#### 새로운 버전을 가져오기 위해 업데이트하기
  
 <!--When you *do* want to update a crate, Cargo provides another command, `update`, which will ignore the *Cargo.lock* file and figure out all the latest versions that fit your specifications in *Cargo.toml*-->
+
+
 <!--If that works, Cargo will write those versions to the *Cargo.lock* file. -->
  
+ 
 <!--But by default, Cargo will only look for versions greater than `0.8.3` and less than `0.9.0`-->
+
+
 <!--If the `rand` crate has released two new versions, `0.8.4` and `0.9.0`, you would see the following if you ran `cargo update`:  -->
 <!-- manual-regeneration 
 cd listings/ch02-guessing-game-tutorial/listing-02-02/ 
@@ -677,30 +683,39 @@ foo
 ```console 
 $ cargo run 
    Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 4.45s      Running `target/debug/guessing_game` 
-<!--Guess the number! -->
-<!--The secret number is: 61 -->
-<!--Please input your guess. -->
+Guess the number!
+The secret number is: 61
+Please input your guess.
 10 
-<!--You guessed: 10 -->
-<!--Too small! -->
-<!--Please input your guess. -->
+You guessed: 10
+Too small!
+Please input your guess.
 99 
-<!--You guessed: 99 -->
-<!--Too big! -->
-<!--Please input your guess. -->
+You guessed: 99
+Too big!
+Please input your guess.
 foo 
-<!--Please input your guess. -->
+Please input your guess.
 61 
-<!--You guessed: 61 -->
-<!--You win! -->
+You guessed: 61
+You win!
 ``` 
  
 <!--Awesome! With one tiny final tweak, we will finish the guessing game-->
+
+
 <!--Recall that the program is still printing the secret number-->
+
+
 <!--That worked well for testing, but it ruins the game-->
+
+
 <!--Let’s delete the `println!` that outputs the secret number-->
+
+
 <!--Listing 2-6 shows the final code. -->
- 
+
+
 <span class="filename">Filename: src/main.rs</span> 
  
 ```rust,ignore 
@@ -708,14 +723,29 @@ foo
 ``` 
  
 <span class="caption">Listing 2-6: Complete guessing game code</span>  
+
 <!--## Summary -->
+## 요약
  
 <!--At this point, you’ve successfully built the guessing game-->
+
+
 <!--Congratulations!  -->
+
+
 <!--This project was a hands-on way to introduce you to many new Rust concepts: `let`, `match`, methods, associated functions, the use of external crates, and more-->
+
+
 <!--In the next few chapters, you’ll learn about these concepts in more detail-->
+
+
 <!--Chapter 3 covers concepts that most programming languages have, such as variables, data types, and functions, and shows how to use them in Rust-->
+
+
 <!--Chapter 4 explores ownership, a feature that makes Rust different from other languages-->
+
+
 <!--Chapter 5 discusses structs and method syntax, and Chapter 6 explains how enums work. -->
  
+
 [variables-and-mutability]: 
