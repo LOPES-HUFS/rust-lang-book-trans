@@ -134,80 +134,69 @@ chapters. -->
 개념 챕터에서는 기본적인 러스트 언어의 특징에 대해서 배울 것입니다.
 <!-- In project chapters, we’ll build small programs together, applying what you’ve learned so far. -->
 프로젝트 챕터에서는 함께 작은 프로그램들을 만들고, 배웠던 것들을 적용할 것입니다.
-
 <!-- Chapters 2, 12, and 20 are project chapters; the rest are concept chapters. -->
-챕터 2,12,20
+2,12,20장은 프로젝트 챕터이고, 나머지는 개념 챕터입니다.
+<!-- Chapter 1 explains how to install Rust, how to write a “Hello, world!” program, and how to use Cargo, Rust’s package manager and build tool.  -->
+1장은 러스트를 설치하는 방법과 'Hello world' 프로그램, 러스트 패키지 매니저와 빌드 도구인 cargo에 대하여 설명합니다.
+<!-- Chapter 2 is a hands-on introduction to the Rust language. Here we cover concepts at a high level, and later chapters will provide additional detail. -->
+2장에서는 맛보기 정도로 러스트를 실습합니다. 여기서는 러스트의 개념들을 대략적으로 다루며, 이후 장에서 세부적인 부분들을 다룹니다.
+<!-- If you want to get your hands dirty right away, Chapter 2 is the place for that. -->
+만약 바로 실습을 통해서 러스트를 배우고 싶다면, 2장부터 시작하셔도 됩니다.
+<!-- At first, you might even want to skip Chapter 3, which covers Rust features similar to those of other programming languages, and head straight to Chapter 4 to learn about Rust’s ownership system. -->
 
-Chapter 1 explains how to install Rust, how to write a “Hello, world!” program,
-and how to use Cargo, Rust’s package manager and build tool. Chapter 2 is a
-hands-on introduction to the Rust language. Here we cover concepts at a high
-level, and later chapters will provide additional detail. If you want to get
-your hands dirty right away, Chapter 2 is the place for that. At first, you
-might even want to skip Chapter 3, which covers Rust features similar to those
-of other programming languages, and head straight to Chapter 4 to learn about
-Rust’s ownership system. However, if you’re a particularly meticulous learner
-who prefers to learn every detail before moving on to the next, you might want
-to skip Chapter 2 and go straight to Chapter 3, returning to Chapter 2 when
-you’d like to work on a project applying the details you’ve learned.
+<!-- However, if you’re a particularly meticulous learner who prefers to learn every detail before moving on to the next, you might want to skip Chapter 2 and go straight to Chapter 3, returning to Chapter 2 when you’d like to work on a project applying the details you’ve learned. -->
 
-Chapter 5 discusses structs and methods, and Chapter 6 covers enums, `match`
-expressions, and the `if let` control flow construct. You’ll use structs and
-enums to make custom types in Rust.
+<!-- Chapter 5 discusses structs and methods, and Chapter 6 covers enums, `match` expressions, and the `if let` control flow construct. You’ll use structs and enums to make custom types in Rust. -->
 
-In Chapter 7, you’ll learn about Rust’s module system and about privacy rules
-for organizing your code and its public Application Programming Interface
-(API). Chapter 8 discusses some common collection data structures that the
-standard library provides, such as vectors, strings, and hash maps. Chapter 9
-explores Rust’s error-handling philosophy and techniques.
+<!-- In Chapter 7, you’ll learn about Rust’s module system and about privacy rules for organizing your code and its public Application Programming Interface(API). -->
 
-Chapter 10 digs into generics, traits, and lifetimes, which give you the power
-to define code that applies to multiple types. Chapter 11 is all about testing,
-which even with Rust’s safety guarantees is necessary to ensure your program’s
-logic is correct. In Chapter 12, we’ll build our own implementation of a subset
-of functionality from the `grep` command line tool that searches for text
-within files. For this, we’ll use many of the concepts we discussed in the
-previous chapters.
+<!-- Chapter 8 discusses some common collection data structures that the standard library provides, such as vectors, strings, and hash maps. -->
 
-Chapter 13 explores closures and iterators: features of Rust that come from
-functional programming languages. In Chapter 14, we’ll examine Cargo in more
-depth and talk about best practices for sharing your libraries with others.
-Chapter 15 discusses smart pointers that the standard library provides and the
-traits that enable their functionality.
+<!-- Chapter 9 explores Rust’s error-handling philosophy and techniques. -->
 
-In Chapter 16, we’ll walk through different models of concurrent programming
-and talk about how Rust helps you to program in multiple threads fearlessly.
-Chapter 17 looks at how Rust idioms compare to object-oriented programming
-principles you might be familiar with.
+<!-- Chapter 10 digs into generics, traits, and lifetimes, which give you the power to define code that applies to multiple types. -->
 
-Chapter 18 is a reference on patterns and pattern matching, which are powerful
-ways of expressing ideas throughout Rust programs. Chapter 19 contains a
-smorgasbord of advanced topics of interest, including unsafe Rust, macros, and
-more about lifetimes, traits, types, functions, and closures.
+<!-- Chapter 11 is all about testing, which even with Rust’s safety guarantees is necessary to ensure your program’s logic is correct.  -->
 
-In Chapter 20, we’ll complete a project in which we’ll implement a low-level
-multithreaded web server!
+<!-- In Chapter 12, we’ll build our own implementation of a subset of functionality from the `grep` command line tool that searches for text within files. -->
 
-Finally, some appendices contain useful information about the language in a
-more reference-like format. Appendix A covers Rust’s keywords, Appendix B
-covers Rust’s operators and symbols, Appendix C covers derivable traits
-provided by the standard library, Appendix D covers some useful development
-tools, and Appendix E explains Rust editions.
+<!-- For this, we’ll use many of the concepts we discussed in the previous chapters. -->
 
-There is no wrong way to read this book: if you want to skip ahead, go for it!
-You might have to jump back to earlier chapters if you experience any
-confusion. But do whatever works for you.
+<!-- Chapter 13 explores closures and iterators: features of Rust that come from functional programming languages.  -->
 
+<!-- In Chapter 14, we’ll examine Cargo in more depth and talk about best practices for sharing your libraries with others. -->
+
+<!-- Chapter 15 discusses smart pointers that the standard library provides and the traits that enable their functionality. -->
+
+<!-- In Chapter 16, we’ll walk through different models of concurrent programming and talk about how Rust helps you to program in multiple threads fearlessly. -->
+
+<!-- Chapter 17 looks at how Rust idioms compare to object-oriented programming principles you might be familiar with. -->
+
+<!-- Chapter 18 is a reference on patterns and pattern matching, which are powerful ways of expressing ideas throughout Rust programs. -->
+
+<!-- Chapter 19 contains a smorgasbord of advanced topics of interest, including unsafe Rust, macros, and more about lifetimes, traits, types, functions, and closures. -->
+
+<!-- In Chapter 20, we’ll complete a project in which we’ll implement a low-level multithreaded web server! -->
+
+<!-- Finally, some appendices contain useful information about the language in a more reference-like format.-->
+
+<!-- Appendix A covers Rust’s keywords, Appendix B covers Rust’s operators and symbols, Appendix C covers derivable traits provided by the standard library, Appendix D covers some useful development tools, and Appendix E explains Rust editions.-->
+
+<!-- There is no wrong way to read this book: if you want to skip ahead, go for it! You might have to jump back to earlier chapters if you experience any confusion.-->
+
+<!-- But do whatever works for you. -->
+하지만 본인에게 가장 적절한 방법대로 공부하셔도 좋습니다.
 <span id="ferris"></span>
 
 <!--An important part of the process of learning Rust is learning how to read the
 error messages the compiler displays: these will guide you toward working code.-->
-해당 과정 중에 가장 중요한 부분은 컴파일러의 에러 메시지 읽는 방법을 배우는 것입니다: 이것만 잘해도 잘 작동하는 코드를 작성할 수 있습니다.
+해당 과정 중에 가장 중요한 부분은 컴파일러의 에러 메시지 읽는 방법을 배우는 것입니다: 이것만 잘해도 코드 내부의 오류들을 수정할 수 있습니다.
 <!--As such, we’ll provide many examples that don’t compile along with the error message the compiler will show you in each situation.-->
-따라서, 우리는
-<!--Know that if you enter and run a random example, it may not compile! Make sure you read the surrounding text to see whether the example you’re trying to run is meant to
-error. -->
-
+우리는 각각의 오류들을 보여주기 위해 컴파일러가 에러 메시지를 주는 예제들을 제공할 예정입니다.
+<!--Know that if you enter and run a random example, it may not compile! Make sure you read the surrounding text to see whether the example you’re trying to run is meant to error. -->
+아무 예제를 입력하고 실행하면 컴파일되지 않을 수 있습니다. 이것은 오류를 보여드리기 위함이니 주변 텍스트를 확인하여 어떤 오류인지를 확인해주세요.
 <!--Ferris will also help you distinguish code that isn’t meant to work:-->
+또한, Ferris는 오작동하는 코드를 구분하기 위해 등장합니다.
 
 | Ferris                                                                 | Meaning                                          |
 |------------------------------------------------------------------------|--------------------------------------------------|
