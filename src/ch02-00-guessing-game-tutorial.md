@@ -252,7 +252,7 @@ $ cargo run
 Guess the number!
 Please input your guess.
 6 
-<!--You guessed: 6 -->
+You guessed: 6
 ``` 
  
 <!--At this point, the first part of the game is done: we’re getting input from the keyboard and then printing it. -->
@@ -279,7 +279,6 @@ Please input your guess.
  
 <!-- When updating the version of `rand` used, also update the version of `rand` used in these files so they all match: 
 <!--* ch07-04-bringing-paths-into-scope-with-the-use-keyword.md * ch14-03-cargo-workspaces.md -->
---> 
  
 <span class="filename">Filename: Cargo.toml</span> 
  
@@ -290,7 +289,7 @@ Please input your guess.
 <!--In the *Cargo.toml* file, everything that follows a header is part of a section that continues until another section starts-->
 <!--The `[dependencies]` section is where you tell Cargo which external crates your project depends on and which versions of those crates you require-->
 <!--In this case, we’ll specify the `rand` crate with the semantic version specifier `0.8.3`-->
-<!--Cargo understands [Semantic Versioning][semver]<!-- ignore --> (sometimes called *SemVer*), which is a standard for writing version numbers-->
+<!--Cargo understands [Semantic Versioning][semver](sometimes called *SemVer*), which is a standard for writing version numbers-->
 <!--The number `0.8.3` is actually shorthand for `^0.8.3`, which means any version that is at least `0.8.3` but below `0.9.0`-->
 <!--Cargo considers these versions to have public APIs compatible with version `0.8.3`, and this specification ensures you'll get the latest patch release that will still compile with the code in this chapter-->
 <!--Any version `0.9.0` or greater is not guaranteed to have the same API as what the following examples use. -->
@@ -321,7 +320,8 @@ $ cargo build
    Compiling ppv-lite86 v0.2.10 
    Compiling rand_chacha v0.3.0 
    Compiling rand v0.8.3 
-   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 2.53s ``` 
+   Compiling guessing_game v0.1.0 (file:///projects/guessing_game)     Finished dev [unoptimized + debuginfo] target(s) in 2.53s
+ ``` 
  
 <span class="caption">Listing 2-2: The output from running `cargo build` after adding the rand crate as a dependency</span> 
  
