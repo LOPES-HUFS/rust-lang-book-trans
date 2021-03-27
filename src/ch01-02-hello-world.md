@@ -6,13 +6,13 @@
 <!-- It’s traditional when learning a new language to write a little program that prints the text `Hello world!` to the screen, so we’ll do the same here! -->
 전통적으로 새로운 (번역자 주: 프로그래밍) 언어를 배울때 스크린에 `Hello, world!`라는 텍스트를 출력하는 작은 프로그램을 작성하기에, 우리도 여기서 그와 같은 같은 것을 해 볼 것입니다!
 
-> Note: This book assumes basic familiarity with the command line.
+<!--> Note: This book assumes basic familiarity with the command line. -->
 Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니다.
-> Rust makes no specific demands about your editing or tooling or where your code lives, so if you prefer to use an integrated development environment (IDE) instead of the command line, feel free to use your favorite IDE.
+<!--> Rust makes no specific demands about your editing or tooling or where your code lives, so if you prefer to use an integrated development environment (IDE) instead of the command line, feel free to use your favorite IDE. -->
 러스트는 너의 코드가 어디에서 작성되는지 또는 어떤 편집기를 쓰는지 또는 어떤 도구를 사용하는지에 대한 구체적인 요구사항이 없기에, 만약 당신이 커맨드 라인 대신 통합 개발 환경(IDE)를 사용하는 것을 더 선호한다면 자유롭게 당신의 가장 선호하는 IDE를 사용해도 좋습니다.
-> Many IDEs now have some degree of Rust support; check the IDE’s documentation for details.
+<!--> Many IDEs now have some degree of Rust support; check the IDE’s documentation for details. -->
 많은 IDE들은 이제 어느정도 러스트 언어를 지원한다. 세부사항들은 해당 IDE 들의 문서를 확인하기 바랍니다.
-> Recently, the Rust team has been focusing on enabling great IDE support, and progress has been made rapidly on that front!
+<!--> Recently, the Rust team has been focusing on enabling great IDE support, and progress has been made rapidly on that front! -->
 최근에 러스트 팀은 대부분의 IDE 지원을 가능하게 하는데 초점을 맞추고 있고, 최전선에서 빠르게 발전하고 있습니다.
 
 ### 프로젝트 디렉토리 만들기(Creating a Project Directory)
