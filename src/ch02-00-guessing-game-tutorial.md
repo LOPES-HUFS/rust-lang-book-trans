@@ -1,182 +1,248 @@
 <!--# Programming a Guessing Game -->
- 
-<!--Let’s jump into Rust by working through a hands-on project together! This chapter introduces you to a few common Rust concepts by showing you how to use them in a real program-->
-<!--You’ll learn about `let`, `match`, methods, associated functions, using external crates, and more! The following chapters will explore these ideas in more detail-->
+# 프로그래밍 추측 게임
+<!--Let’s jump into Rust by working through a hands-on project together!-->
+이제 실습 프로젝트를 함께 진행하여 러스트로 들어가 봅시다 !
+<!--This chapter introduces you to a few common Rust concepts by showing you how to use them in a real program-->
+이 챕터는 당신에게 몇개의 일반적인 러스트 개념들을 실제 프로그램에서 그것들이 어떻게 사용되는지를 보여주는 것으로 소개합니다.
+<!--You’ll learn about `let`, `match`, methods, associated functions, using external crates, and more! -->
+당신은 `let`, `match`, 메소드, 연관 함수, 외부 크레이터 사용 등을 배울 것 입니다.
+<!--The following chapters will explore these ideas in more detail-->
+다음에 오는 챕터들에서 이 아이디어들을 좀 더 상세히 탐험할 것 입니다.
 <!--In this chapter, you’ll practice the fundamentals.  -->
+이 챕터에서는 당신은 기본적인 것을 연습할 것 입니다.
 <!--We’ll implement a classic beginner programming problem: a guessing game-->
+우리는 고전적인 입문자 프로그래밍 문제인 추측 게임을 구현할 것 입니다.
 <!--Here’s how it works: the program will generate a random integer between 1 and 100-->
+작동 방식은 다음과 같다: 프로그램은 1에서 100 사이의 무작위의 정수를 생성한다.
 <!--It will then prompt the player to enter a guess-->
+그 때에 플레이어에게 추측을 입력하라는 창(prompt)이 나타날 것 입니다.
 <!--After a guess is entered, the program will indicate whether the guess is too low or too high-->
+이후에 추측이 입력되었으면, 프로그램은 추측이 너무 낮은지 또는 너무 높은지를 지시합니다.
 <!--If the guess is correct, the game will print a congratulatory message and exit.  -->
+만약 추측이 맞다면, 그 게임은 축하 메세지를 출력하고 종료됩니다.
 <!--## Setting Up a New Project -->
- 
+## 새로운 프로젝트 세팅하기
 <!--To set up a new project, go to the *projects* directory that you created in Chapter 1 and make a new project using Cargo, like so: -->
- 
-```console 
+새로운 프로젝트를 세팅하기 위해, 챕터1을 만들었던 *projects* 디렉토리로 이동하고, Cargo를 이용해 새로운 프로젝트를 만듭니다.
+
+```console
 $ cargo new guessing_game 
 $ cd guessing_game 
-``` 
- 
+```
+
 <!--The first command, `cargo new`, takes the name of the project (`guessing_game`) as the first argument-->
+첫 번째 명령어 `cargo new`는 프로젝트의 이름(`guessing_game`)을 첫번째 인수로 사용합니다.
 <!--The second command changes to the new project’s directory. -->
- 
+두 번째 명령어는 새로운 프로젝트들의 디렉토리로 변경하는 것 입니다.
 <!--Look at the generated *Cargo.toml* file: -->
- 
-<span class="filename">Filename: Cargo.toml</span> 
- 
-```toml 
+생성 된 *Cargo.toml* 파일을보십시오.
+
+<span class="filename">Filename: Cargo.toml</span>
+
+```toml
 {{#include ../listings/ch02-guessing-game-tutorial/no-listing-01-cargo-new/Cargo.toml}} 
-``` 
- 
+```
+
 <!--If the author information that Cargo obtained from your environment is not correct, fix that in the file and save it again. -->
- 
+만약 카고가 당신의 환경으로부터 얻은 사용자 정보가 불명확할 경우, 파일 안에서 고치고 그것을 다시 저장하십시오.
 <!--As you saw in Chapter 1, `cargo new` generates a “Hello, world!” program for you-->
+당신이 챕터 1에서 본 것과 같이 `cargo new`는 당신을 위해 프로그램 “Hello, world!”를 생성합니다.
 <!--Check out the *src/main.rs* file: -->
- 
+src/main.rs 파일을 살펴봅시다. 
 <span class="filename">Filename: src/main.rs</span> 
- 
-```rust 
+
+```rust
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/no-listing-01-cargo-new/src/main.rs}} 
-``` 
- 
+```
+
 <!--Now let’s compile this “Hello, world!” program and run it in the same step using the `cargo run` command: -->
- 
-```console 
+이제 이 “Hello, world!” 프로그램을 컴파일하고, 같은 단계에서 `cargo run` 명령어를 통해 실행해 봅시다.
+
+```console
 {{#include ../listings/ch02-guessing-game-tutorial/no-listing-01-cargo-new/output.txt}} 
-``` 
- 
+```
+
 <!--The `run` command comes in handy when you need to rapidly iterate on a project, as we’ll do in this game, quickly testing each iteration before moving on to the next one. -->
- 
+`run` 명령어는 우리가 다음 단계로 넘어가기 전에 각 반복을 빠르게 테스팅 하는 것을 이 게임에서 하는 것처럼 프로젝트를 빠르게 반복해야 할 때 유용합니다.
 <!--Reopen the *src/main.rs* file-->
-<!--You’ll be writing all the code in this file.  -->
+*src/main.rs* 파일을 다시 열어봅니다.
+<!--You’ll be writing all the code in this file.-->
+당신은 모든 코드들을 이 파일에 작성할 것 입니다.
 <!--## Processing a Guess -->
- 
+## 추리 처리하기
 <!--The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form-->
+추측하는 게임 프로그램의 첫 번째 파트는 유저의 입력 값을 묻고, 입력을 처리하고, 입력 값이 기대된 형식이 맞는지 검토합니다.
 <!--To start, we’ll allow the player to input a guess-->
+시작하기 위해 우리는 플레이어가 추측을 입력하기위해 허용해야 합니다.
 <!--Enter the code in Listing 2-1 into *src/main.rs*. -->
- 
-<span class="filename">Filename: src/main.rs</span> 
- 
-```rust,ignore 
+Listing 2-1의 코드를 *src/main.rs* 에 작성하십시오.
+
+<span class="filename">Filename: src/main.rs</span>
+
+```rust,ignore
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:all}} 
-``` 
- 
-<span class="caption">Listing 2-1: Code that gets a guess from the user and prints it</span> 
- 
+```
+
+<span class="caption">Listing 2-1: Code that gets a guess from the user and prints it</span>
+
 <!--This code contains a lot of information, so let’s go over it line by line-->
+이 코드는 많은 정보를 포함하기에 한 줄 한 줄씩 살펴보겠습니다.
 <!--To obtain user input and then print the result as output, we need to bring the `io` (input/output) library into scope-->
+유저의 입력 값을 얻고, 그 결과를 아웃풋으로 출력하려면, 우리는 `io`(input/output) 라이브러리를 범위(scope)로 가져와야합니다.
 <!--The `io` library comes from the standard library (which is known as `std`): -->
- 
+`io` 라이브러리는 `std` 라고 불리는 표준 라이브러리에 있습니다.
+
 ```rust,ignore 
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:io}} 
-``` 
- 
+```
+
 <!--By default, Rust brings only a few types into the scope of every program in [the *prelude*][prelude]<!-- ignore -->-->
+기본적으로 러스트는 범위(scope)에 [the *prelude*][prelude] 안 모든 프로그램의 오직 몇 가지 타입만 가져옵니다.
 <!--If a type you want to use isn’t in the prelude, you have to bring that type into scope explicitly with a `use` statement-->
+만약 당신이 사용하기를 원하는 타입이 prelude 안에 없다면, 당신은 `use` 문을 사용하여 해당하는 타입을 명시적으로 범위 안으로 가져와야 합니다.
 <!--Using the `std::io` library provides you with a number of useful features, including the ability to accept user input. -->
- 
+`std::io` 라이브러리를 사용하면 당신에게 유저 입력 값을 받는 능력을 포함하여 수 많은 유용한 기능을 제공합니다. 
 [prelude]: ../std/prelude/index.html 
- 
+
 <!--As you saw in Chapter 1, the `main` function is the entry point into the program: -->
- 
+당신이 챕터 1에서 봤던 것처럼 `main` 함수는 프로그램의 진입점 입니다.
+
 ```rust,ignore 
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:main}} 
-``` 
- 
+```
+
 <!--The `fn` syntax declares a new function, the parentheses, `()`, indicate there are no parameters, and the curly bracket, `{`, starts the body of the function.  -->
+`fn` 문법은 새로운 함수를 선언하고 소괄호 `()` 는 어떠한 파라미터도 없다는 것을 보여주고, 중괄호 `{` 함수의 몸체를 시작합니다.
 <!--As you also learned in Chapter 1, `println!` is a macro that prints a string to the screen: -->
- 
+당신이 챕터 1에서 배웠듯이, `println!`은 화면에 프린트를 시작하는 매크로 입니다. 
+
 ```rust,ignore 
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:print}} 
-``` 
- 
+```
+
 <!--This code is printing a prompt stating what the game is and requesting input from the user. -->
- 
+이 코드는 게임이 무엇인지를 알려주고, 사용자로부터 입력값을 요청하는 프롬프트(prompt)를 출력합니다.
 <!--### Storing Values with Variables -->
- 
+### 변수에 값 저장하기
 <!--Next, we’ll create a place to store the user input, like this:  -->
-```rust,ignore 
+다음으로 우리는 사용자 입력 값을 저장하기 위한 장소를 만들어 줄 것입니다.
+
+```rust,ignore
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:string}} 
-``` 
- 
-<!--Now the program is getting interesting! There’s a lot going on in this little line-->
+```
+
+<!--Now the program is getting interesting! -->
+이제 프로그램은  좀 더 흥미로워지고 있습니다.
+<!--There’s a lot going on in this little line-->
+이 작은 줄에서 많은 일이 일어났습니다.
 <!--Notice that this is a `let` statement, which is used to create a *variable*-->
+이것은 *variable* 변수를 만들 때 사용하는 `let` 문 입니다. 
 <!--Here’s another example: -->
- 
-```rust,ignore 
+여기에 또 다른 예시가 있습니다.
+
+```rust,ignore
 let foo = bar; 
-``` 
- 
+```
+
 <!--This line creates a new variable named `foo` and binds it to the value of the `bar` variable-->
+이 줄은 `foo`라는 이름의 새로운 변수를 만들고 `bar` 변수로 그 값을 묶어 줍니다.
 <!--In Rust, variables are immutable by default-->
+러스트에서는 변수들은 기본적으로 불변형(immutable)입니다. 
 <!--We’ll be discussing this concept in detail in the [“Variables and Mutability”][variables-and-mutability]<!-- ignore --> section in Chapter 3-->
+우리는 챕터 3의 [“Variables and Mutability”][variables-and-mutability] 섹션에서 좀 더 상세하게 이 개념을 토의할 것입니다.
 <!--The following example shows how to use `mut` before the variable name to make a variable mutable: -->
- 
-```rust,ignore 
+아래의 예시는 변수를 변경 가능하게 만들기 위해 변수 이름 앞에 `mut`을 어떻게 사용하는지 보여줍니다.
+
+```rust,ignore
 let foo = 5; // immutable 
 let mut bar = 5; // mutable 
-``` 
- 
-<!--> Note: The `//` syntax starts a comment that continues until the end of the > line-->
-<!--Rust ignores everything in comments, which are discussed in more detail > in Chapter 3. -->
- 
-<!--Let’s return to the guessing game program-->
-<!--You now know that `let mut guess` will introduce a mutable variable named `guess`-->
-<!--On the other side of the equal sign (`=`) is the value that `guess` is bound to, which is the result of calling `String::new`, a function that returns a new instance of a `String`. [`String`][string] is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text. -->
- 
-[string]: ../std/string/struct.String.html 
- 
-<!--The `::` syntax in the `::new` line indicates that `new` is an *associated function* of the `String` type-->
-<!--An associated function is implemented on a type, in this case `String`, rather than on a particular instance of a `String`-->
-<!--Some languages call this a *static method*. -->
- 
-<!--This `new` function creates a new, empty string-->
-<!--You’ll find a `new` function on many types, because it’s a common name for a function that makes a new value of some kind. -->
- 
-<!--To summarize, the `let mut guess = String::new();` line has created a mutable variable that is currently bound to a new, empty instance of a `String`-->
-<!--Whew!  -->
-<!--Recall that we included the input/output functionality from the standard library with `use std::io;` on the first line of the program-->
-<!--Now we’ll call the `stdin` function from the `io` module: -->
- 
-```rust,ignore 
-{{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:read}} 
-``` 
- 
-<!--If we hadn’t put the `use std::io` line at the beginning of the program, we could have written this function call as `std::io::stdin`-->
-<!--The `stdin` function returns an instance of [`std::io::Stdin`][iostdin], which is a type that represents a handle to the standard input for your terminal.  -->
-[iostdin]: ../std/io/struct.Stdin.html 
- 
-<!--The next part of the code, `.read_line(&mut guess)`, calls the [`read_line`][read_line] method on the standard input handle to get input from the user-->
+```
 
+<!--> Note: The `//` syntax starts a comment that continues until the end of the > line-->
+Note: `//` 문법은 > 줄 끝까지 계속되는 주석을 시작합니다.
+<!--Rust ignores everything in comments, which are discussed in more detail > in Chapter 3. -->
+러스트는 주석 안에 모든 것을 무시합니다. 이것은 3장에 좀 더 자세히 설명합니다.
+<!--Let’s return to the guessing game program-->
+이제 다시 추측 게임 프로그램으로 돌아와 봅시다.
+<!--You now know that `let mut guess` will introduce a mutable variable named `guess`-->
+당신은 이제 `let mut guess`가 변수 이름 `guess`를 변경가능하게 도입한다는 것을 알 것입니다.
+<!--On the other side of the equal sign (`=`) is the value that `guess` is bound to, which is the result of calling `String::new`, a function that returns a new instance of a `String`. -->
+등호(`=`)의 다른 쪽에는 `guess`가 묶어진 값이 있는데, 그것은 `String`의 새 인스턴스(instance)를 반환하는 함수 인`String :: new`를 호출한 결과 입니다.
+<!--[`String`][string] is a string type provided by the standard library that is a growable, UTF-8 encoded bit of text. -->
+[`String`][string] 은 표준 라이브러리에의해 제공된 것으로 확장 가능한(growable) UTF-8 인코딩의 문자열 타입입니다.
+[string]: ../std/string/struct.String.html
+
+<!--The `::` syntax in the `::new` line indicates that `new` is an *associated function* of the `String` type-->
+`:: new` 줄의 `::`구문은 `new`가 `String` 유형의 관련 함수(*associated function*)임을 나타냅니다.
+<!--An associated function is implemented on a type, in this case `String`, rather than on a particular instance of a `String`-->
+연결된 함수는 `String`의 특정 인스턴스가 아닌 유형 (이 경우 `String`)에서 구현됩니다.
+<!--Some languages call this a *static method*. -->
+몇몇 언어들에서 이것을 정적 메소드(*static method*)라 부릅니다.
+<!--This `new` function creates a new, empty string-->
+이 `new` 함수는 새로운 빈 스트링을 만듭니다.
+<!--You’ll find a `new` function on many types, because it’s a common name for a function that makes a new value of some kind. -->
+당신은 `new` 함수를 많은 유형에서 찾아 볼 수 있을 것인데, 왜냐하면, 그것은 어떤 종류의 새로운 값을 만드는 함수의 일반적인 이름이기 때문입니다.
+<!--To summarize, the `let mut guess = String::new();` line has created a mutable variable that is currently bound to a new, empty instance of a `String`-->
+요약하면 `let mut guess = String :: new ();` 줄은 현재 `String`의 비어있는 새 인스턴스에 바인딩 된 변할 수 있는 변수를 생성했습니다.
+<!--Whew!  -->
+우!
+<!--Recall that we included the input/output functionality from the standard library with `use std::io;` on the first line of the program-->
+프로그램의 첫 번째 줄에 `use std :: io;` 를 사용하여 표준 라이브러리의 입력 / 출력 기능성을 포함했음을 기억하십시오.
+<!--Now we’ll call the `stdin` function from the `io` module: -->
+이제 우리는 `io` 모듈의 `stdin` 기능을 호출할 것입니다.
+
+```rust,ignore
+{{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:read}} 
+```
+
+<!--If we hadn’t put the `use std::io` line at the beginning of the program, we could have written this function call as `std::io::stdin`-->
+만약 우리가 프로그램 시작 부분에 `use std :: io` 줄을 넣지 않았다면, 우리는 이 함수 호출을 `std :: io :: stdin`으로 작성할 수 있습니다.
+<!--The `stdin` function returns an instance of [`std::io::Stdin`][iostdin], which is a type that represents a handle to the standard input for your terminal.  -->
+`stdin` 함수는 터미널의 표준 입력에 대한 조작을 나타내는 타입 인 [`std :: io :: Stdin`] [iostdin]의 인스턴스를 반환합니다.
+[iostdin]: ../std/io/struct.Stdin.html
+
+<!--The next part of the code, `.read_line(&mut guess)`, calls the [`read_line`][read_line] method on the standard input handle to get input from the user-->
+코드의 다음 부분인 `.read_line(&mut guess)`는 사용자로 부터 입력을 다루기 위한 표준 입력 메소드인 [`read_line`][read_line]을 호출합니다.
 <!--We’re also passing one argument to `read_line`: `&mut guess`. -->
- 
+우리는 또한, `read_line`: `&mut guess` 에 하나의 인자(argument)를 보낼 수 있습니다.
 [read_line]: ../std/io/struct.Stdin.html#method.read_line  
 
 <!--The job of `read_line` is to take whatever the user types into standard input and append that into a string (without overwriting its contents), so it takes that string as an argument-->
+`read_line`의 역할은 사용자가 입력하는 모든 것을 표준 입력으로 가져와 문자열에 추가하여 (내용을 덮어 쓰지 않고) 해당 문자열을 인자로 가지는 것입니다.
 <!--The string argument needs to be mutable so the method can change the string’s content by adding the user input.  -->
+그 문자열 인자는 메소드가 사용자 입력을 추가하여 문자열의 내용을 변경할 수 있도록 변경 가능할 필요가 있습니다.
 <!--The `&` indicates that this argument is a *reference*, which gives you a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times-->
+`&`는 이 인수가 참조(*reference*)임을 나타내는데, 그것은 당신에게 해당 데이터를 메모리를 여러 번 복사 할 필요없이 당신의 코드의 여러 부분이 하나의 데이터에 액세스 할 수 있습니다.
 <!--References are a complex feature, and one of Rust’s major advantages is how safe and easy it is to use references-->
+참조는 복잡한 특징을 가지는데, Rust의 주요 장점 중 하나는 참조를 사용하는 것이 얼마나 안전하고 쉬운지 입니다.
 <!--You don’t need to know a lot of those details to finish this program-->
+당신이 이 프로그램을 마치기 위해 이러한 세부 정보를 많이 알 필요는 없습니다.
 <!--For now, all you need to know is that like variables, references are immutable by default-->
+당신이 지금 당장 알아야 할 것은 변수와 마찬가지로 참조는 기본적으로 변경할 수 없다는 것입니다.
 <!--Hence, you need to write `&mut guess` rather than `&guess` to make it mutable. (Chapter 4 will explain references more thoroughly.) -->
- 
+따라서 변경 가능하게하려면`& guess`가 아닌`& mut guess`를 작성해야합니다. (4 장에서는 참고에 대해 자세히 설명합니다.)
 <!--### Handling Potential Failure with the `Result` Type -->
- 
+### `Result` 타입으로 잠재적인 실패 다루기
 <!--We’re still working on this line of code-->
+우리는 여전히 이 코드 줄에서 작업 중 입니다.
 <!--Although we’re now discussing a third line of text, it’s still part of a single logical line of code-->
+비록 우리는 이제 텍스트의 세 번째 줄에 대해 논의하고 있지만, 여전히 단일 논리적 코드 줄의 일부분 입니다.
 <!--The next part is this method: -->
- 
-```rust,ignore 
+다음 파트는 이 메소드 입니다.
+
+```rust,ignore
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:expect}} 
-``` 
- 
+```
+
 <!--When you call a method with the `.foo()` syntax, it’s often wise to introduce a newline and other whitespace to help break up long lines-->
+당신이 `.foo ()`구문을 사용하여 메서드를 호출 할 때, 긴 줄을 나누는 데 도움이 되도록 줄 바꿈 및 기타 공백을 도입하는 것이 좋습니다.
 <!--We could have written this code as: -->
- 
-```rust,ignore 
+우리는 이 코드를 다음과 같이 쓸 수 있습니다.
+
+```rust,ignore
 io::stdin().read_line(&mut guess).expect("Failed to read line");
-``` 
- 
+```
+
 <!--However, one long line is difficult to read, so it’s best to divide it-->
 <!--Now let’s discuss what this line does. -->
  
