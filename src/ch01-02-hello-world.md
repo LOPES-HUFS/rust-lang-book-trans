@@ -164,9 +164,9 @@ fn main() {
 우리는 이 문자를 `println!` 에 인자로 넘겨주고, 그 문자는 화면에 출력되었습니다.
 
 <!--Fourth, we end the line with a semicolon (`;`), which indicates that this expression is over and the next one is ready to begin.-->
-네 번째 우리는 줄 끝에 세미콜론을 표시하는데, 그것은 이 표현식이 끝나고 다음 것이 시작될 준비가 되었다는 지시를 합니다.
+네 번째 우리는 줄 끝에 세미콜론(`;`)을 표시하는데, 그것은 이 표현식이 끝나고 다음 것이 시작될 준비가 되었다는 지시를 합니다.
 <!--Most lines of Rust code end with a semicolon.-->
-대부분의 러스트 코드 줄 끝에 세미콜론이 함께 합니다.
+대부분의 러스트 코드 줄 끝은 세미콜론으로 끝납니다.
 
 ### 컴파일링과 실행하는 것은 구분된 단계
 
