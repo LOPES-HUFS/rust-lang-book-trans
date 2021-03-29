@@ -168,29 +168,29 @@ fn main() {
 <!--Most lines of Rust code end with a semicolon.-->
 대부분의 러스트 코드 줄 끝은 세미콜론으로 끝납니다.
 
-### 컴파일링과 실행하는 것은 구분된 단계
+<!-- ### Compiling and Running Are Separate Steps -->
+### 컴파일(Compiling)과 실행(Running)은 별도의 단계(Steps)
 
 <!--You’ve just run a newly created program, so let’s examine each step in the process.-->
-당신은 새롭게 만들어진 프로그램을 실행했으므로 과정에서 각 단계를 살펴보겠습니다.
+여려분은 이제 새롭게 만들어진 프로그램을 실행했으므로, 과정에서 각 단계를 살펴보겠습니다.
 
 <!--Before running a Rust program, you must compile it using the Rust compiler by entering the `rustc` command and passing it the name of your source file, like this:-->
-러스트 프로그램 실행 전에 당신은 그것을 `rustc`에 명령과 당신의 소스 파일의 이름을 전달하여 입력하는 것으로 러스트 컴파일러를 사용해 반드시 이것과 같이 컴파일 해야합니다.
+러스트 프로그램을 실행하기 전에, 여러분은 아래와 같이 명령어 `rustc`를 입력하고 다음으로 여러분의 소스 파일의 이름을 쳐서, 러스트 프로그램을 컴파일해야 합니다.
 
 ```console
 $ rustc main.rs
 ```
 
-<!--If you have a C or C++ background, you’ll notice that this is similar to `gcc`
-or `clang`.-->
-만약 당신이 C나 C++을 배웠다면, 당신은 이것이 `gcc`나 `clang`과 비슷하다는 것을 알아차릴 것입니다.
+<!--If you have a C or C++ background, you’ll notice that this is similar to `gcc` or `clang`.-->
+만약 여러분이 C 또는 C ++ 배경 지식이 있으면, 이것이 `gcc`나 `clang`과 비슷하다는 것을 알아차릴 것입니다.
 <!--After compiling successfully, Rust outputs a binary executable.-->
-컴파일링이 성공적으로 된 이후에 러스트 바이너리 실행 파일을 출력합니다.
+성공적으로 컴파일한 후, 러스트는 바이너리 '실행파일(executable)'을 출력합니다.
 <!--On Linux, macOS, and PowerShell on Windows, you can see the executable by entering the `ls` command in your shell.-->
-리눅스와 맥 OS, 윈도우 파워쉘에서는 당신은 당신의 셀에 `ls` 명령어를 입력하는 것으로 실행파일을 볼 수 있습니다.
+리눅스와 맥 OS, 윈도우 파워쉘(PowerShell)에서, 여러분은 여러분의 셀(shell)에서 명령어 `ls`를 하면 그 실행파일을 볼 수 있습니다.
 <!--On Linux and macOS, you’ll see two files.-->
-리눅스와 맥 OS에서는 당신은 두 개의 파일을 볼 수 있습니다.
-<!--With PowerShell on Windows, you’ll see the same three files that you would see using CMD.-->
-윈도우 파워쉘에서는 당신은 CMD를 사용하여 볼 수 있는 것과 같은 3개의 동일한 파일들을 볼 수 있습니다.
+리눅스와 맥 OS에서는, 두 개의 파일이 보일 것입니다.
+With PowerShell on Windows, you’ll see the same three files that you would see using CMD.
+윈도우 파워쉘에서는, CMD를 사용하여 볼 수 있는 것과 같은 3개의 동일한 파일들을 볼 수 있습니다.
 
 ```console
 $ ls
@@ -198,7 +198,7 @@ main  main.rs
 ```
 
 <!--With CMD on Windows, you would enter the following:-->
-윈도우 CMD에서는 당신은 아래의 것을 입력합니다.
+윈도우 CMD에서, 여러분은 아랭와 같이 입력할 것입니다.
 
 ```cmd
 > dir /B %= the /B option says to only show the file names =%
@@ -208,17 +208,17 @@ main.rs
 ```
 
 <!--This shows the source code file with the *.rs* extension, the executable file (*main.exe* on Windows, but *main* on all other platforms), and, when using Windows, a file containing debugging information with the *.pdb* extension.-->
-이것은 *.rs* 확장자의 소스코드 파일, 실행 파일(윈도우에서는 *main.exe* , 그러나 다른 모든 플랫폼에서는 *main*) 그리고, 윈도우를 사용할 때 *.pdb* 확장자를 사용하는 디버깅 정보를 포함하는 파일을 보여준다.
+이것은 *.rs* 확장자를 갖고 있는 소스 코드 파일, 실행 파일(윈도우에서는 *main.exe* , 그러나 다른 모든 플랫폼에서는 *main*) 그리고, 윈도우를 사용할 때, *.pdb* 확장자를 가지고 있는 디버깅 정보를 포함하는 파일을 보여줍니다.
 
 <!--From here, you run the *main* or *main.exe* file, like this:-->
-여기에서 이것과 같이 *main* 또는 *main.exe* 파일을 실행합니다.
+여기에서 다음처럼 *main* 또는 *main.exe* 파일을 실행합니다.
 
 ```console
 $ ./main # or .\main.exe on Windows
 ```
 
 <!--If *main.rs* was your “Hello, world!” program, this line would print `Hello, world!` to your terminal.-->
-만약 *main.rs*가 당신의 “Hello, world!” 프로그램이라면, 이 줄은 당신의 터미널에 `Hello, world!`를 출력할 것입니다.
+만약 *main.rs*가 여러분은 “Hello, world!” 프로그램이라면, 이 줄은 당신의 터미널에 `Hello, world!`를 출력할 것입니다.
 
 <!--If you’re more familiar with a dynamic language, such as Ruby, Python, or JavaScript, you might not be used to compiling and running a program as separate steps.-->
 만약 당신이 좀 더 동적 언어(루비, 파이썬, 자바스크립트 와 같은)에 친밀하다면, 당신은 아마도 프로그램을 컴파일링과 실행하는 단계로 구분하는데에 익숙하지 않을 것입니다.
