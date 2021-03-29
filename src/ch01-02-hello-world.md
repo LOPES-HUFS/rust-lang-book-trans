@@ -221,13 +221,13 @@ $ ./main # or .\main.exe on Windows
 만약 *main.rs*가 여러분은 “Hello, world!” 프로그램이라면, 이 줄은 당신의 터미널에 `Hello, world!`를 출력할 것입니다.
 
 <!--If you’re more familiar with a dynamic language, such as Ruby, Python, or JavaScript, you might not be used to compiling and running a program as separate steps.-->
-만약 당신이 좀 더 동적 언어(루비, 파이썬, 자바스크립트 와 같은)에 친밀하다면, 당신은 아마도 프로그램을 컴파일링과 실행하는 단계로 구분하는데에 익숙하지 않을 것입니다.
+만약 여러분이 좀 더 동적(dynamic) 언어, 예를 들어 루비, 파이썬, 자바스크립트 와 같은 언어에 친밀하다면, 아마도 프로그램을 컴파일(compiling)과 실행(running)하는 별도의 단계로 구분하는데에 익숙하지 않을 수도 있습니다.
 <!--Rust is an *ahead-of-time compiled* language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.-->
-러스트는 사전에 컴파일된(*ahead-of-time compiled*) 언어로 당신이 프로그램을 컴파일 하고 누군가에게 실행파일을 주고나면, 그들은 러스트의 설치 없이도 실행할 수 있다는 것을 의미합니다.
+러스트는 '사전에 컴파일된(*ahead-of-time compiled*)' 언어인데, 이는 여러분이 프로그램을 컴파일하고 누군가에게 그 실행파일을 줄 수 있으면, 그들은 러스트를 설치하지 않고도 이를 실행할 수 있다는 것을 의미합니다.
 <!--If you give someone a *.rb*, *.py*, or *.js* file, they need to have a Ruby, Python, or JavaScript implementation installed (respectively).-->
-만약 당신이 누군가에게 *.rb*, *.py*, or *.js* 파일을 준다면, 그들은 루비, 파이썬, 자바스크립트를 이행하기 위해 개별적으로 설치를 해야할 필요가 있습니다.
+만약 여러분이 누군가에게 *.rb*, *.py*, or *.js* 파일을 준다면, 그들은 루비, 파이썬, 자바스크립트를 이행하기 위해 개별적으로 설치를 해야할 필요가 있습니다.
 <!--But in those languages, you only need one command to compile and run your program.-->
-그러나 그 언어들에서는 당신은 당신의 프로그램을 컴파일하고 실행하는데 오직 하나의 명령어만 필요로할 것입니다.
+그러나 이런 언어들에서는, 여러분은 당신의 프로그램을 컴파일하고 실행하는데 오직 하나의 명령어만 필요로할 것입니다.
 <!--Everything is a trade-off in language design.-->
 모든 것은 언어 디자인 안에서의 상쇄작용입니다.
 
