@@ -5,17 +5,17 @@
 <!--This chapter introduces you to a few common Rust concepts by showing you how to use them in a real program-->
 이 장에서는 여러분에게 실제 프로그램에서 몇 개의 일반적인 러스트 개념들을 어떻게 사용되는지를 보여주면서 이 개념들을 소개하고자 합니다.
 <!--You’ll learn about `let`, `match`, methods, associated functions, using external crates, and more! -->
-여러분은 `let`, `match`, 메소드, 관련(associated) 함수, 외부 크레이터 사용 등을 배울 것 입니다.
+여러분은 `let`, `match`, 메소드, 관련(associated) 함수, 외부 크레이터 사용 등을 배울 것입니다.
 <!--The following chapters will explore these ideas in more detail-->
-다음 장에서 이 아이디어들을 좀 더 상세히 탐험할 것 입니다.
+다음 장에서 이 아이디어들을 좀 더 상세히 탐험할 것입니다.
 <!--In this chapter, you’ll practice the fundamentals.  -->
 이 장에서, 여러분은 기본적인 것을 연습할 것입니다.
 We’ll implement a classic beginner programming problem: a guessing game
 우리는 고전적인 입문자 프로그래밍 문제인 추측 게임을 구현할 것입니다.
 <!--Here’s how it works: the program will generate a random integer between 1 and 100-->
-작동 방식은 다음과 같습니다: 프로그램은 1에서 100 사이의 무작위의 정수를 생성한다.
+작동 방식은 다음과 같습니다: 프로그램은 1에서 100 사이의 무작위의 정수를 생성합니다.
 <!--It will then prompt the player to enter a guess-->
-이 때 플레이어에게 추측을 입력하라는 프롬프트(prompt)가 나타날 것 입니다.
+이 때 플레이어에게 추측을 입력하라는 프롬프트(prompt)가 나타날 것입니다.
 <!--After a guess is entered, the program will indicate whether the guess is too low or too high-->
 이후에 추측이 입력하면, 프로그램은 추측이 너무 낮은지 또는 너무 높은지를 지시합니다.
 <!--If the guess is correct, the game will print a congratulatory message and exit.  -->
@@ -67,7 +67,7 @@ The `run` command comes in handy when you need to rapidly iterate on a project, 
 <!--Reopen the *src/main.rs* file-->
 *src/main.rs* 파일을 다시 열어봅니다.
 <!--You’ll be writing all the code in this file.-->
-당신은 모든 코드들을 이 파일에 작성할 것 입니다.
+당신은 모든 코드들을 이 파일에 작성할 것입니다.
 <!--## Processing a Guess -->
 ## 추측 진행하기
 <!--The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form-->
@@ -500,7 +500,7 @@ Cargo에는 사용자 또는 다른 사람이 당신의 코드를 빌드 할 때
 <!--If that works, Cargo will write those versions to the *Cargo.lock* file. -->
 만약 그것이 작동한다면, Cargo는 *Cargo.lock* 파일에 그 버전들을 작성할 것입니다.
 <!--But by default, Cargo will only look for versions greater than `0.8.3` and less than `0.9.0`-->
-그러나 기본적으로, Cargo는 오직 `0.9.0` 보다 작고 `0.8.3` 보다 큰 버전만 찾을 것 입니다.
+그러나 기본적으로, Cargo는 오직 `0.9.0` 보다 작고 `0.8.3` 보다 큰 버전만 찾을 것입니다.
 <!--If the `rand` crate has released two new versions, `0.8.4` and `0.9.0`, you would see the following if you ran `cargo update`:  -->
 만약 `rand` 크레이트가 `0.8.4` 와 `0.9.0` 두개의 새로운 버전을 출시했다면, 당신은 `cargo update`를 실행하면 다음이 표시되는 것을 볼겁니다.
 <!-- manual-regeneration 
@@ -707,7 +707,7 @@ Rust는 기본적으로`i32`를 사용하는데, 이것은 Rust가 다른 곳에
 <!--Ultimately, we want to convert the `String` the program reads as input into a real number type so we can compare it numerically to the secret number-->
 궁극적으로, 우리는 프로그램이 입력으로 읽은 문자열을 실수 타입으로 변환해야 우리는 숫자로서 그것을 비밀 번호와 비교할 수 있습니다.
 <!--We can do that by adding another line to the `main` function body:-->
-우리는 `main` 함수 몸통에 또 다른 줄을 추가하여 그것을 할 것 입니다.
+우리는 `main` 함수 몸통에 또 다른 줄을 추가하여 그것을 할 것입니다.
 <span class="filename">Filename: src/main.rs</span>
 
 ```rust,ignore 
@@ -824,7 +824,7 @@ Too big!
 <!--Be sure to indent the lines inside the loop another four spaces each and run the program again-->
 반복문 안의 줄을 각각 4 칸씩 들여 쓰기하고 프로그램을 다시 실행하십시오.
 <!--Notice that there is a new problem because the program is doing exactly what we told it to do: ask for another guess forever! It doesn’t seem like the user can quit! -->
-프로그램이 우리가 지시 한대로 정확히 수행하기 때문에 새로운 문제가 있음을 주목하십시오. 영원히 다른 추측을 요구한다! 사용자가 종료 할 수없는 것 같습니다!
+프로그램이 우리가 지시 한대로 정확히 수행하기 때문에 새로운 문제가 있음을 주목하십시오. 영원히 다른 추측을 요구한다! 사용자가 종료 할 수없는 것같습니다!
 <!--The user could always interrupt the program by using the keyboard shortcut <span class="keystroke">ctrl-c</span>-->
 사용자는 언제든지 키보드 단축키 <span class="keystroke">ctrl-c</span> 를 이용해 프로그램을 중단할 수 있습니다.
 <!--But there’s another way to escape this insatiable monster, as mentioned in the `parse` discussion in [“Comparing the Guess to the Secret Number”](#comparing-the-guess-to-the-secret-number): if the user enters a non-number answer, the program will crash-->
@@ -986,7 +986,7 @@ You win!
 <!--This project was a hands-on way to introduce you to many new Rust concepts: `let`, `match`, methods, associated functions, the use of external crates, and more-->
 이 프로젝트는 'let', 'match', 메서드, 관련 함수, 외부 크레이트 사용 등 많은 새로운 Rust 개념을 소개하는 실습 방법이었습니다.
 <!--In the next few chapters, you’ll learn about these concepts in more detail-->
-다음으로 오는 몇개의 장에서는 당신은 이 개념들을 좀 더 자세히 배우게 될 것 입니다.
+다음으로 오는 몇개의 장에서는 당신은 이 개념들을 좀 더 자세히 배우게 될 것입니다.
 <!--Chapter 3 covers concepts that most programming languages have, such as variables, data types, and functions, and shows how to use them in Rust-->
 장 3장은 대부분의 프로그래밍 언어들이 가지고 있는 변수, 데이터 타입, 함수 등 개념을 소개하고 Rust에서의 사용법을 다룹니다.
 <!--Chapter 4 explores ownership, a feature that makes Rust different from other languages-->
