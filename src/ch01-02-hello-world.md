@@ -51,11 +51,11 @@ $ cd hello_world
 <!--Rust files always end with the *.rs* extension.-->
 러스트 파일들은 언제나 끝에 *.rs* 확장자를 붙여줍니다.
 <!--If you’re using more than one word in your filename, use an underscore to separate them.-->
-만약 당신이 너의 파일 이름에 하나의 단어 이상을 사용한다면, 밑줄을 사용하여 그것들을 구분하면 됩니다.
+만약 여러분이 여러분의 파일 이름에 하나 이상의 단어를 사용한다면, 밑줄을 사용하여 단어들을 구분하면 됩니다.
 <!--For example, use *hello_world.rs* rather than *helloworld.rs*.-->
-예를 들면, *helloworld.rs* 보다는 *hello_world.rs*를 사용하는게 낫습니다.
+예를 들어, *helloworld.rs* 보다는 *hello_world.rs*를 사용하세요.
 <!--Now open the *main.rs* file you just created and enter the code in Listing 1-1.-->
-이제 당신이 방금 막 만든 *main.rs* 파일을 열고 1-1dml 코드 리스트를 입력해봅시다.
+이제 여러분이 방금 만든 *main.rs* 파일을 열고 (번역자 주: 아래) 1-1에 열거된 코드를 입력해 봅시다.
 
 <span class="filename">Filename: main.rs</span>
 
