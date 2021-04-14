@@ -1,19 +1,19 @@
 <!--# Programming a Guessing Game -->
 # 프로그래밍 추측 게임
 <!--Let’s jump into Rust by working through a hands-on project together!-->
-이제 실습 프로젝트를 함께 진행하여 Rust로 들어가 봅시다 !
+이제 실습(hands-on) 프로젝트를 함께 진행하여 Rust(이하 러스트)로 들어가 봅시다!
 <!--This chapter introduces you to a few common Rust concepts by showing you how to use them in a real program-->
-이 장는 당신에게 몇개의 일반적인 Rust 개념들을 실제 프로그램에서 그것들이 어떻게 사용되는지를 보여주는 것으로 소개합니다.
+이 장에서는 여러분에게 실제 프로그램에서 몇 개의 일반적인 러스트 개념들을 어떻게 사용되는지를 보여주면서 이 개념들을 소개하고자 합니다.
 <!--You’ll learn about `let`, `match`, methods, associated functions, using external crates, and more! -->
-여러분은 `let`, `match`, 메소드, 연관 함수, 외부 크레이터 사용 등을 배울 것 입니다.
+여러분은 `let`, `match`, 메소드, 관련(associated) 함수, 외부 크레이터 사용 등을 배울 것 입니다.
 <!--The following chapters will explore these ideas in more detail-->
-다음에 오는 장들에서 이 아이디어들을 좀 더 상세히 탐험할 것 입니다.
+다음 장에서 이 아이디어들을 좀 더 상세히 탐험할 것 입니다.
 <!--In this chapter, you’ll practice the fundamentals.  -->
-이 장에서는 여러분은 기본적인 것을 연습할 것 입니다.
+이 장에서, 여러분은 기본적인 것을 연습할 것입니다.
 We’ll implement a classic beginner programming problem: a guessing game
-우리는 고전적인 입문자 프로그래밍 문제인 추측 게임을 구현할 것 입니다.
+우리는 고전적인 입문자 프로그래밍 문제인 추측 게임을 구현할 것입니다.
 <!--Here’s how it works: the program will generate a random integer between 1 and 100-->
-작동 방식은 다음과 같다: 프로그램은 1에서 100 사이의 무작위의 정수를 생성한다.
+작동 방식은 다음과 같습니다: 프로그램은 1에서 100 사이의 무작위의 정수를 생성한다.
 <!--It will then prompt the player to enter a guess-->
 이 때 플레이어에게 추측을 입력하라는 프롬프트(prompt)가 나타날 것 입니다.
 <!--After a guess is entered, the program will indicate whether the guess is too low or too high-->
