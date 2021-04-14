@@ -233,7 +233,7 @@ $ ./main # or .\main.exe on Windows
 
 <!--Just compiling with `rustc` is fine for simple programs, but as your project grows, you’ll want to manage all the options and make it easy to share your code.-->
 `rustc`와 함께 컴파일링 하는 것은 단일 프로그램에서 적당합니다만, 당신의 프로젝트가 성장한다면, 당신은 모든 선택사항을 관리하고, 당신의 코드를 공유할 수 있어야만 합니다.
-<!--Next, we’ll introduce you to the Cargo tool, which will help you write real-world Rust programs.
-다음으로 우리는 실제적인 러스트 프로그램들을 작성하는데 당신을 도와줄 수 있는 Cargo 라는 도구를 당신에게 소개할 것입니다.-->
+<!--Next, we’ll introduce you to the Cargo tool, which will help you write real-world Rust programs.-->
+다음으로, 우리는 여러분이 현실-세계 러스트 프로그램들을 작성하는데 도움을 줄 수 있는 Cargo 라는 도구를 여러분에게 소개할 것입니다.
 
 [troubleshooting]: ch01-01-installation.html#troubleshooting
