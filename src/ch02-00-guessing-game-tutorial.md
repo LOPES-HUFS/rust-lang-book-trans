@@ -67,13 +67,13 @@ The `run` command comes in handy when you need to rapidly iterate on a project, 
 <!--Reopen the *src/main.rs* file-->
 *src/main.rs* 파일을 다시 열어봅니다.
 <!--You’ll be writing all the code in this file.-->
-여러분은 모든 코드들을 이 파일에 작성할 것입니다.
+여러분은 모든 코드들을 이 파일 안에 작성할 것입니다.
 <!--## Processing a Guess -->
 ## 추측 진행하기
 <!--The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form-->
 추측하는 게임 프로그램의 첫 번째 파트는 유저의 입력 값을 요구하고, 입력을 처리하고, 입력 값이 기대된 형식에 맞는지 검토합니다.
 To start, we’ll allow the player to input a guess
-시작하려면 우리는 플레이어가 추측을 입력할 수 있게 해야합니다.
+시작하려면, 우리는 플레이어가 추측을 입력할 수 있게 해야합니다.
 <!--Enter the code in Listing 2-1 into *src/main.rs*. -->
 Listing 2-1의 코드를 *src/main.rs* 에 작성하십시오.
 
