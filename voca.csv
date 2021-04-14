@@ -1,9 +1,9 @@
 en, ko
-executable, 실행 파일
-PowerShell, 파워쉘
-space, 공백
-you, 여러분
 chapter, 장
 classic, 클래식,
-prompt, 프롬프트
+executable, 실행 파일
+PowerShell, 파워쉘
 prelude, 예약어
+prompt, 프롬프트
+space, 공백
+you, 여러분
