@@ -23,9 +23,9 @@ Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니�
 여러분의 코드가 어디에 있는지 러스트에게는 중요하진 않지만, 그러나 이 책에 있는 프로젝트들과 연습(exercise)들을 위해서, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 여러분의 모든 프로젝트들을 거기에 유지하는 것을 제안합니다.
 
 <!--Open a terminal and enter the following commands to make a *projects* directory and a directory for the “Hello, world!” project within the *projects* directory.-->
-터미널을 열고 아래의 커맨드들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
+터미널을 열고 아래 명령어들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
 <!--For Linux, macOS, and PowerShell on Windows, enter this:-->
-Linux, macOS 그리고 윈도우 PowerShell 에서 다음 명령어를 입력해주세요:
+Linux, macOS 그리고 윈도우 PowerShell에서 다음 명령어를 입력해주세요:
 
 ```console
 $ mkdir ~/projects
@@ -47,7 +47,7 @@ $ cd hello_world
 ### 러스트 프로그램의 작성과 실행
 
 <!--Next, make a new source file and call it *main.rs*.-->
-다음으로 새로운 소스 파일*main.rs*을 만들어 봅시다.
+다음으로 새로운 소스 파일을 만들고 이 파일을 *main.rs*이라고 이름을 붙입니다.
 <!--Rust files always end with the *.rs* extension.-->
 러스트 파일들은 언제나 끝에 *.rs* 확장자를 붙여줍니다.
 <!--If you’re using more than one word in your filename, use an underscore to separate them.-->
