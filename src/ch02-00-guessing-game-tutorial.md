@@ -44,7 +44,7 @@ $ cd guessing_game
 ```
 
 <!--If the author information that Cargo obtained from your environment is not correct, fix that in the file and save it again. -->
-만약 Cargo가 당신의 환경으로부터 얻은 사용자 정보가 불명확할 경우, 파일 안에서 고치고 그것을 다시 저장하세요.
+만약 Cargo가 여러분의 환경으로부터 얻은 저자(author) 정보가 불명확할 경우에는, 그 파일 안에서 그것을 고치고(fix), 다시 저장하세요.
 <!--As you saw in Chapter 1, `cargo new` generates a “Hello, world!” program for you-->
 1장에서 본 것과 같이 `cargo new`는 프로그램 “Hello, world!”를 생성합니다.
 <!--Check out the *src/main.rs* file: -->
