@@ -20,7 +20,7 @@ Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니�
 <!-- You’ll start by making a directory to store your Rust code. -->
 여러분은 여러분의 러스트 코드을 저장하기 위한 디렉토리를 만드는 것부터 시작할 것입니다.
 <!--It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a *projects* directory in your home directory and keeping all your projects there.-->
-여러분의 코드가 어디에서 살고 있는지 러스트에는 중요하진 않지만, 그러나 프로젝트들과 훈련들을 위해서 이 책에서는, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 어러분의 모든 프로젝트들을 거기에 유지하는 제안합니다.
+여러분의 코드가 어디에 있는지 러스트에게는 중요하진 않지만, 그러나 이 책에 있는 프로젝트들과 연습(exercise)들을 위해서, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 여러분의 모든 프로젝트들을 거기에 유지하는 것을 제안합니다.
 
 <!--Open a terminal and enter the following commands to make a *projects* directory and a directory for the “Hello, world!” project within the *projects* directory.-->
 터미널을 열고 아래의 커맨드들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
