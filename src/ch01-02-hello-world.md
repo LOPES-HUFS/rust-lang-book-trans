@@ -70,7 +70,7 @@ fn main() {
 <!--Save the file and go back to your terminal window.-->
 파일을 저장하고 당신의 터미널 윈도우로 돌아갑니다.
 <!--On Linux or macOS, enter the following commands to compile and run the file:-->
-리눅스나 맥 OS에선 파일을 컴파일하고 실행하기 위해서 아래의 명령어들을 따라쳐 줍니다.
+리눅스나 맥 OS에선, 파일을 컴파일하고 실행하기 위해서 아래의 명령어들을 입력합니다.
 
 ```console
 $ rustc main.rs
@@ -88,7 +88,7 @@ Hello, world!
 ```
 
 <!--Regardless of your operating system, the string `Hello, world!` should print to the terminal.-->
-당신의 OS 시스템에 관계없이 문자 `Hello, world!` 는 터미널에 출력될 것입니다.
+여러분의 '운영 체계(operating system)'에 관계없이, 문자열 (string) `Hello, world!`이 터미널에 출력될 것입니다.
 <!--If you don’t see this output, refer back to the[“Troubleshooting”][troubleshooting]<!-- ignore --> part of the Installation section for ways to get help.-->
 만약 당신이 이 결과물이 보이지 않는다면 도움을 얻기위한 방법으로 설치 파트의 [“Troubleshooting”] 섹션을 참조하면 됩니다.
 <!--If `Hello, world!` did print, congratulations!-->
