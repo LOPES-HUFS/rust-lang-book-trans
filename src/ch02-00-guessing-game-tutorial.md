@@ -17,13 +17,13 @@ We’ll implement a classic beginner programming problem: a guessing game
 <!--It will then prompt the player to enter a guess-->
 이 때 플레이어에게 추측을 입력하라는 프롬프트(prompt)가 나타날 것입니다.
 <!--After a guess is entered, the program will indicate whether the guess is too low or too high-->
-이후에 추측이 입력하면, 프로그램은 추측이 너무 낮은지 또는 너무 높은지를 지시합니다.
-<!--If the guess is correct, the game will print a congratulatory message and exit.  -->
-만약 추측이 맞다면, 그 게임은 축하 메세지를 출력하고 종료됩니다.
+이후에 추측이 입력하면, 프로그램은 추측이 너무 낮은지 또는 너무 높은지를 암시(indicate)하다,
+<!--If the guess is correct, the game will print a congratulatory message and exit.-->
+만약 추측이 맞다면, 게임은 축하 메세지를 출력하고 종료합니다.
 <!--## Setting Up a New Project -->
-## 새로운 프로젝트 세팅하기
+## 새로운 프로젝트 설정하기
 <!--To set up a new project, go to the *projects* directory that you created in Chapter 1 and make a new project using Cargo, like so: -->
-새로운 프로젝트를 세팅하기 위해, 1장에서 만들었던 *projects* 디렉토리로 이동하고, Cargo를 이용해 새로운 프로젝트를 만듭니다.
+새 프로젝트를 설정하려면, 1장에서 생성한(created) *projects* 디렉토리로 이동해, Cargo를 이용해 다음과 같이 새로운 프로젝트를 만듭니다:
 
 ```console
 $ cargo new guessing_game 
@@ -31,7 +31,7 @@ $ cd guessing_game
 ```
 
 <!--The first command, `cargo new`, takes the name of the project (`guessing_game`) as the first argument-->
-첫 번째 명령어 `cargo new`는 프로젝트의 이름(`guessing_game`)을 첫번째 인수로 사용합니다.
+첫 번째 명령어 `cargo new`는 프로젝트의 이름(`guessing_game`)을 첫 번째 인수(argument)로 사용합니다.
 <!--The second command changes to the new project’s directory. -->
 두 번째 명령어는 새로운 프로젝트들의 디렉토리로 이동합니다.
 <!--Look at the generated *Cargo.toml* file: -->
