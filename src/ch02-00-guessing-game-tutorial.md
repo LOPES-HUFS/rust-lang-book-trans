@@ -67,7 +67,7 @@ The `run` command comes in handy when you need to rapidly iterate on a project, 
 <!--Reopen the *src/main.rs* file-->
 *src/main.rs* 파일을 다시 열어봅니다.
 <!--You’ll be writing all the code in this file.-->
-당신은 모든 코드들을 이 파일에 작성할 것입니다.
+여러분은 모든 코드들을 이 파일에 작성할 것입니다.
 <!--## Processing a Guess -->
 ## 추측 진행하기
 <!--The first part of the guessing game program will ask for user input, process that input, and check that the input is in the expected form-->
@@ -99,13 +99,13 @@ Listing 2-1의 코드를 *src/main.rs* 에 작성하십시오.
 By default, Rust brings only a few types into the scope of every program in [the *prelude*][prelude]<!-- ignore -->
 기본적으로 Rust는 범위(scope)에 [예약어 (the *prelude*)][prelude] 안 모든 프로그램의 오직 몇 가지 타입만 가져옵니다.
 <!--If a type you want to use isn’t in the prelude, you have to bring that type into scope explicitly with a `use` statement-->
-만약 당신이 사용하기를 원하는 타입이 예약어(prelude) 안에 없다면, 당신은 `use` 문을 사용하여 해당하는 타입을 명시적으로 범위 안으로 가져와야 합니다.
+만약 여러분이 사용하기를 원하는 타입이 예약어(prelude) 안에 없다면, 여러분은 `use` 문을 사용하여 해당하는 타입을 명시적으로 범위 안으로 가져와야 합니다.
 <!--Using the `std::io` library provides you with a number of useful features, including the ability to accept user input. -->
 `std::io` 라이브러리를 사용하면 유저 입력 값을 받는 기능(ability)을 포함하여 수 많은 유용한 기능을 제공합니다.
 [prelude]: ../std/prelude/index.html
 
 <!--As you saw in Chapter 1, the `main` function is the entry point into the program: -->
-당신이 1장에서 봤던 것처럼 `main` 함수는 프로그램의 진입점입니다.
+여러분이 1장에서 봤던 것처럼 `main` 함수는 프로그램의 진입점입니다.
 
 ```rust,ignore
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:main}} 
@@ -114,7 +114,7 @@ By default, Rust brings only a few types into the scope of every program in [the
 <!--The `fn` syntax declares a new function, the parentheses, `()`, indicate there are no parameters, and the curly bracket, `{`, starts the body of the function.  -->
 `fn` 문법은 새로운 함수를 선언하고 비어있는 소괄호 `()`는 어떠한 파라미터도 없다는 것을 보여주고, 중괄호 `{` 함수의 몸체를 시작합니다.
 <!--As you also learned in Chapter 1, `println!` is a macro that prints a string to the screen: -->
-당신이 1장 에서 배웠듯이, `println!`은 화면에 프린트를 시작하는 매크로입니다.
+여러분이 1장 에서 배웠듯이, `println!`은 화면에 프린트를 시작하는 매크로입니다.
 
 ```rust,ignore
 {{#rustdoc_include ../listings/ch02-guessing-game-tutorial/listing-02-01/src/main.rs:print}} 
@@ -181,7 +181,7 @@ Rust는 주석 안에 모든 것을 무시합니다. 이것은 3장에서 좀 �
 <!--This `new` function creates a new, empty string-->
 이 `new` 함수는 새로운 빈 문자열을 만듭니다.
 <!--You’ll find a `new` function on many types, because it’s a common name for a function that makes a new value of some kind. -->
-당신은 `new` 함수를 많은 타입에서 찾아 볼 수 있을 것인데, 왜냐하면, 그것은 어떤 종류의 새로운 값을 만드는 함수의 일반적인 이름이기 때문입니다.
+여러분은 `new` 함수를 많은 타입에서 찾아 볼 수 있을 것인데, 왜냐하면, 그것은 어떤 종류의 새로운 값을 만드는 함수의 일반적인 이름이기 때문입니다.
 <!--To summarize, the `let mut guess = String::new();` line has created a mutable variable that is currently bound to a new, empty instance of a `String`-->
 요약하면 `let mut guess = String :: new ();` 줄은 현재 `String`의 비어있는 새 인스턴스에 바인딩 된 변할 수 있는 변수를 생성했습니다.
 <!--Whew!  -->
@@ -212,13 +212,13 @@ Rust는 주석 안에 모든 것을 무시합니다. 이것은 3장에서 좀 �
 <!--The string argument needs to be mutable so the method can change the string’s content by adding the user input.  -->
 그 문자열 인수는 메소드가 사용자 입력 값을 받아야하기에 변경 가능한 타입이어야 합니다.
 The `&` indicates that this argument is a *reference*, which gives you a way to let multiple parts of your code access one piece of data without needing to copy that data into memory multiple times
-`&`는 이 인수가 참조(*reference*)임을 나타내는데, 그것은 당신에게 해당 데이터를 메모리를 여러 번 복사 할 필요없이 당신의 코드의 여러 부분이 하나의 데이터에 액세스 할 수 있습니다.
+`&`는 이 인수가 참조(*reference*)임을 나타내는데, 그것은 여러분에게 해당 데이터를 메모리를 여러 번 복사 할 필요없이 여러분의 코드의 여러 부분이 하나의 데이터에 액세스 할 수 있습니다.
 <!--References are a complex feature, and one of Rust’s major advantages is how safe and easy it is to use references-->
 참조는 복잡한 기능을 가지는데, Rust의 주요 장점 중 하나는 참조를 사용하는 것이 얼마나 안전하고 쉬운지 입니다.
 <!--You don’t need to know a lot of those details to finish this program-->
-당신이 이 프로그램을 마치기 위해 이러한 세부 정보를 많이 알 필요는 없습니다.
+여러분이 이 프로그램을 마치기 위해 이러한 세부 정보를 많이 알 필요는 없습니다.
 <!--For now, all you need to know is that like variables, references are immutable by default-->
-당신이 지금 당장 알아야 할 것은 변수와 마찬가지로 참조는 기본적으로 변경할 수 없다는 것입니다.
+여러분이 지금 당장 알아야 할 것은 변수와 마찬가지로 참조는 기본적으로 변경할 수 없다는 것입니다.
 <!--Hence, you need to write `&mut guess` rather than `&guess` to make it mutable. (Chapter 4 will explain references more thoroughly.) -->
 따라서 변경 가능하게하려면`& guess`가 아닌`& mut guess`를 작성해야합니다. (4 장에서는 참고에 대해 자세히 설명합니다.)
 <!--### Handling Potential Failure with the `Result` Type -->
@@ -235,7 +235,7 @@ The `&` indicates that this argument is a *reference*, which gives you a way to 
 ```
 
 <!--When you call a method with the `.foo()` syntax, it’s often wise to introduce a newline and other whitespace to help break up long lines-->
-당신이 `.foo ()`구문을 사용하여 메서드를 호출 할 때, 긴 줄을 나누는 데 도움이 되도록 줄 바꿈 및 기타 공백을 도입하는 것이 좋습니다.
+여러분이 `.foo ()`구문을 사용하여 메서드를 호출 할 때, 긴 줄을 나누는 데 도움이 되도록 줄 바꿈 및 기타 공백을 도입하는 것이 좋습니다.
 <!--We could have written this code as: -->
 우리는 이 코드를 다음과 같이 쓸 수 있습니다.
 
@@ -280,13 +280,13 @@ Rust는 표준 라이브러리에 `Result`라는 이름의 여러 유형(types)�
 <!--If the `read_line` method returns an `Err`, it would likely be the result of an error coming from the underlying operating system-->
 만약 `read_line` 메소드가 `Err`을 반환하는 경우에는, 기본적인 운영 체제에서부터 발생하는 오류의 결과 일 수 있습니다.
 <!--If this instance of `io::Result` is an `Ok` value, `expect` will take the return value that `Ok` is holding and return just that value to you so you can use it-->
-만약 이 `io :: Result` 인스턴스가 `Ok` 값이면 `expect`는 `Ok`가 보유하고 있는 반환 값을 가져 와서 당신이 그 값을 사용할 수 있도록 해당 값만 반환합니다.
+만약 이 `io :: Result` 인스턴스가 `Ok` 값이면 `expect`는 `Ok`가 보유하고 있는 반환 값을 가져 와서 여러분이 그 값을 사용할 수 있도록 해당 값만 반환합니다.
 <!--In this case, that value is the number of bytes in what the user entered into standard input. -->
 이 경우에 그 값은 사용자가 표준 입력으로 입력한 바이트 개수입니다.
 [expect]: ../std/result/enum.Result.html#method.expect 
 
 <!--If you don’t call `expect`, the program will compile, but you’ll get a warning:  -->
-만약 당신이 `expect`를 호출하지 않는다면, 프로그램은 컴파일되지만 경고가 표시될 것입니다.
+만약 여러분이 `expect`를 호출하지 않는다면, 프로그램은 컴파일되지만 경고가 표시될 것입니다.
 
 ```console 
 {{#include ../listings/ch02-guessing-game-tutorial/no-listing-02-without-expect/output.txt}} 
@@ -295,9 +295,9 @@ Rust는 표준 라이브러리에 `Result`라는 이름의 여러 유형(types)�
 <!--Rust warns that you haven’t used the `Result` value returned from `read_line`, indicating that the program hasn’t handled a possible error.  -->
 Rust는`read_line`에서 반환 된 `Result` 값을 사용하지 않았다고 경고하여, 프로그램이 처리 가능한 오류를 처리하지 않았음을 알려줍니다.
 <!--The right way to suppress the warning is to actually write error handling, but because you just want to crash this program when a problem occurs, you can use `expect`-->
-경고를 억누르는 올바른 방법은 실제로 오류 처리를 작성하는 것이지만, 당신은 문제가 발생했을 때 프로그램을 중단하고 싶기 때문에 `expect`를 사용할 수 있습니다.
+경고를 억누르는 올바른 방법은 실제로 오류 처리를 작성하는 것이지만, 여러분은 문제가 발생했을 때 프로그램을 중단하고 싶기 때문에 `expect`를 사용할 수 있습니다.
 <!--You’ll learn about recovering from errors in Chapter 9.  -->
-당신은 9 장에서 오류를 복구하는 것에 대해 배우게 됩니다.
+여러분은 9 장에서 오류를 복구하는 것에 대해 배우게 됩니다.
 
 <!--### Printing Values with `println!` Placeholders -->
 ### `println!` 자리표시자(Placeholders)를 이용한 값 출력
@@ -313,7 +313,7 @@ Rust는`read_line`에서 반환 된 `Result` 값을 사용하지 않았다고 �
 <!--The set of curly brackets, `{}`, is a placeholder: think of `{}` as little crab pincers that hold a value in place-->
 중괄호 세트 `{}`는 자리 표시자입니다. `{}`를 값을 제자리에 고정하는 작은 게 집게라고 생각하십시오.
 <!--You can print more than one value using curly brackets: the first set of curly brackets holds the first value listed after the format string, the second set holds the second value, and so on-->
-당신은 중괄호를 사용하여 둘 이상의 값을 출력할 수 있습니다. 첫 번째 중괄호 세트는 형식 문자열(format string) 다음에 나열된 첫 번째 값을 유지하고 두 번째 세트는 두 번째 값과 기타 값들을 유지합니다.
+여러분은 중괄호를 사용하여 둘 이상의 값을 출력할 수 있습니다. 첫 번째 중괄호 세트는 형식 문자열(format string) 다음에 나열된 첫 번째 값을 유지하고 두 번째 세트는 두 번째 값과 기타 값들을 유지합니다.
 <!--Printing multiple values in one call to `println!` would look like this: -->
 `println!`에 대한 한 번의 호출로 여러 값을 출력하는 것은 다음과 같습니다.
 
@@ -393,7 +393,7 @@ Cargo의 외부 크레이트 사용은 정말로 빛납니다.
 <!--In the *Cargo.toml* file, everything that follows a header is part of a section that continues until another section starts-->
 *Cargo.toml* 파일에서 헤더 뒤에 오는 모든 것은 다른 섹션이 시작될 때까지 계속되는 섹션의 일부분 입니다.
 <!--The `[dependencies]` section is where you tell Cargo which external crates your project depends on and which versions of those crates you require-->
-의존성(`[dependencies]`)섹션은 Cargo에 당신의 프로젝트가 의존하는 외부 크레이트와 당신이 필요한 버전의 크레이트를 알려주는 곳입니다.
+의존성(`[dependencies]`)섹션은 Cargo에 여러분의 프로젝트가 의존하는 외부 크레이트와 여러분이 필요한 버전의 크레이트를 알려주는 곳입니다.
 <!--In this case, we’ll specify the `rand` crate with the semantic version specifier `0.8.3`-->
 이 경우에, 우리는 시맨틱(semantic) 버전 지정자 '0.8.3'을 사용하여 `rand` 크레이트를 지정합니다.
 <!--Cargo understands [Semantic Versioning][semver](sometimes called *SemVer*), which is a standard for writing version numbers-->
@@ -436,7 +436,7 @@ $ cargo build
 <span class="caption">Listing 2-2: The output from running `cargo build` after adding the rand crate as a dependency</span> 
  
 <!--You may see different version numbers (but they will all be compatible with the code, thanks to SemVer!), different lines (depending on the operating system), and the lines may be in a different order. -->
-당신은 아마 다른 버전 번호, (SemVer! 덕분에 모두 코드와 호환 가능), 다른 라인 (운영 체제에 따라 다름), 라인 순서가 다를 수 있습니다.  
+여러분은 아마 다른 버전 번호, (SemVer! 덕분에 모두 코드와 호환 가능), 다른 라인 (운영 체제에 따라 다름), 라인 순서가 다를 수 있습니다.  
 <!--Now that we have an external dependency, Cargo fetches the latest versions of everything from the *registry*, which is a copy of data from [Crates.io][cratesio]-->
 이제 외부 종속성이 있으므로 Cargo는 [Crates.io] [cratesio]의 데이터 사본 인 *레지스트리* 에서 모든 최신 버전을 가져옵니다.
 <!--Crates.io is where people in the Rust ecosystem post their open source Rust projects for others to use. -->
@@ -450,7 +450,7 @@ Crates.io는 Rust 생태계의 사람들이 다른 사람들이 사용할 수 �
 <!--After downloading the crates, Rust compiles them and then compiles the project with the dependencies available. -->
 크레이트를 다운로드 한 후 Rust는 크레이트를 컴파일 한 다음 사용 가능한 의존성으로 프로젝트를 컴파일합니다.
 <!--If you immediately run `cargo build` again without making any changes, you won’t get any output aside from the `Finished` line-->
-만약 당신이 변경하지 않고 즉시 'cargo build'를 다시 실행하면 당신은 'Finished'줄 외에는 어떤 결과도 출력되지 않습니다.
+만약 여러분이 변경하지 않고 즉시 'cargo build'를 다시 실행하면 여러분은 'Finished'줄 외에는 어떤 결과도 출력되지 않습니다.
 <!--Cargo knows it has already downloaded and compiled the dependencies, and you haven’t changed anything about them in your *Cargo.toml* file-->
 Cargo는 이미 의존성을 다운로드하고 컴파일했으며 *Cargo.toml* 파일에서 의존성에 대해 아무것도 변경하지 않았음을 알고 있습니다.
 <!--Cargo also knows that you haven’t changed anything about your code, so it doesn’t recompile that either-->
@@ -458,7 +458,7 @@ Cargo는 사용자가 코드에 대해 아무것도 변경하지 않았음을 �
 <!--With nothing to do, it simply exits. -->
 아무것도 하지 않는다면 그것은 단순하게 종료됩니다. 
 <!--If you open up the *src/main.rs* file, make a trivial change, and then save it and build again, you’ll only see two lines of output: -->
-만약 당신이 *src / main.rs* 파일을 열고 사소한 변경을 만든 다음 저장하고 다시 빌드하면 당신은 오직 두 줄의 출력만 볼 수 있을겁니다.
+만약 여러분이 *src / main.rs* 파일을 열고 사소한 변경을 만든 다음 저장하고 다시 빌드하면 여러분은 오직 두 줄의 출력만 볼 수 있을겁니다.
 <!-- manual-regeneration 
 cd listings/ch02-guessing-game-tutorial/listing-02-02/ 
 touch src/main.rs 
@@ -475,34 +475,34 @@ $ cargo build
 <!--Your dependencies haven’t changed, so Cargo knows it can reuse what it has already downloaded and compiled for those-->
 의존성이 변경되지 않았으므로 Cargo는 이미 다운로드하고 컴파일한 항목을 재사용 할 수 있음을 알고 있습니다.
 <!--It just rebuilds your part of the code. -->
-그 코드의 당신의 부분들만 단순하게 재빌드 합니다.
+그 코드의 여러분의 부분들만 단순하게 재빌드 합니다.
 <!--#### Ensuring Reproducible Builds with the *Cargo.lock* File  -->
 #### *Cargo.lock* 파일과 함께 재현 가능한 빌드 보장하기
 <!--Cargo has a mechanism that ensures you can rebuild the same artifact every time you or anyone else builds your code: Cargo will use only the versions of the dependencies you specified until you indicate otherwise-->
-Cargo에는 사용자 또는 다른 사람이 당신의 코드를 빌드 할 때마다 동일한 아티팩트(artifact)를 다시 빌드할 수 있도록 보장하는 메커니즘이 있습니다. Cargo는 사용자가 다르게 표시 할 때까지 사용자가 지정한 의존성 버전만 사용합니다.
+Cargo에는 사용자 또는 다른 사람이 여러분의 코드를 빌드 할 때마다 동일한 아티팩트(artifact)를 다시 빌드할 수 있도록 보장하는 메커니즘이 있습니다. Cargo는 사용자가 다르게 표시 할 때까지 사용자가 지정한 의존성 버전만 사용합니다.
 <!--For example, what happens if next week version 0.8.4 of the `rand` crate comes out and contains an important bug fix but also contains a regression that will break your code? -->
 예를 들면, 만약 다음주에 `rand` 크레이트의 0.8.4 버전이 나오고, 중요한 버그 수정이 포함되어 있지만 코드를 손상시킬 퇴행(regression)도 포함되어 있다면 무슨일이 일어날까요?
 <!--The answer to this problem is the *Cargo.lock* file, which was created the first time you ran `cargo build` and is now in your *guessing_game* directory-->
-이 문제에 대한 대답은 *Cargo.lock* 파일입니다. 그것은 당신이 처음으로 `cargo build`를 했을 때 만들어지고, 지금은 당신의 *guessing_game* 디렉토리에 있을겁니다.
+이 문제에 대한 대답은 *Cargo.lock* 파일입니다. 그것은 여러분이 처음으로 `cargo build`를 했을 때 만들어지고, 지금은 여러분의 *guessing_game* 디렉토리에 있을겁니다.
 <!--When you build a project for the first time, Cargo figures out all the versions of the dependencies that fit the criteria and then writes them to the *Cargo.lock* file-->
-당신이 처음으로 프로젝트를 빌드 할 때 Cargo는 기준에 맞는 모든 버전의 의존성을 파악한 다음 이를 *Cargo.lock* 파일에 기록합니다.
+여러분이 처음으로 프로젝트를 빌드 할 때 Cargo는 기준에 맞는 모든 버전의 의존성을 파악한 다음 이를 *Cargo.lock* 파일에 기록합니다.
 <!--When you build your project in the future, Cargo will see that the *Cargo.lock* file exists and use the versions specified there rather than doing all the work of figuring out versions again-->
-당신이 미래 프로젝트를 빌드 할 때, Cargo는 *Cargo.lock* 파일이 존재하는지 확인할 것이고, 버전을 다시 파악하는 모든 작업을 수행하기 보다는 거기에 지정된 특정한 버전을 사용한다.
+여러분이 미래 프로젝트를 빌드 할 때, Cargo는 *Cargo.lock* 파일이 존재하는지 확인할 것이고, 버전을 다시 파악하는 모든 작업을 수행하기 보다는 거기에 지정된 특정한 버전을 사용한다.
 <!--This lets you have a reproducible build automatically-->
-이것이 당신을 자동으로 재현 가능한 빌드를 가지도록 만든다.
+이것이 여러분을 자동으로 재현 가능한 빌드를 가지도록 만든다.
 <!--In other words, your project will remain at `0.8.3` until you explicitly upgrade, thanks to the *Cargo.lock* file. -->
-다른 말로, 당신의 프로젝트는 *Cargo.lock* 파일에 덕분에 당신이 명시적으로 업그레이드 하기 전까지 `0.8.3` 으로 유지될 것이다. 
+다른 말로, 여러분의 프로젝트는 *Cargo.lock* 파일에 덕분에 여러분이 명시적으로 업그레이드 하기 전까지 `0.8.3` 으로 유지될 것이다. 
 <!--#### Updating a Crate to Get a New Version -->
 #### 새로운 버전을 가져오기 위해 업데이트하기
 
 <!--When you *do* want to update a crate, Cargo provides another command, `update`, which will ignore the *Cargo.lock* file and figure out all the latest versions that fit your specifications in *Cargo.toml*-->
-크레이트를 업데이트하고 싶을 때, Cargo는 *Cargo.lock* 파일을 무시하고 *Cargo.toml*의 당신의 사양에 맞는 모든 최신 버전을 파악하는`update`라는 또 다른 명령을 제공합니다.
+크레이트를 업데이트하고 싶을 때, Cargo는 *Cargo.lock* 파일을 무시하고 *Cargo.toml*의 여러분의 사양에 맞는 모든 최신 버전을 파악하는`update`라는 또 다른 명령을 제공합니다.
 <!--If that works, Cargo will write those versions to the *Cargo.lock* file. -->
 만약 그것이 작동한다면, Cargo는 *Cargo.lock* 파일에 그 버전들을 작성할 것입니다.
 <!--But by default, Cargo will only look for versions greater than `0.8.3` and less than `0.9.0`-->
 그러나 기본적으로, Cargo는 오직 `0.9.0` 보다 작고 `0.8.3` 보다 큰 버전만 찾을 것입니다.
 <!--If the `rand` crate has released two new versions, `0.8.4` and `0.9.0`, you would see the following if you ran `cargo update`:  -->
-만약 `rand` 크레이트가 `0.8.4` 와 `0.9.0` 두개의 새로운 버전을 출시했다면, 당신은 `cargo update`를 실행하면 다음이 표시되는 것을 볼겁니다.
+만약 `rand` 크레이트가 `0.8.4` 와 `0.9.0` 두개의 새로운 버전을 출시했다면, 여러분은 `cargo update`를 실행하면 다음이 표시되는 것을 볼겁니다.
 <!-- manual-regeneration 
 cd listings/ch02-guessing-game-tutorial/listing-02-02/ 
 cargo update 
@@ -515,9 +515,9 @@ $ cargo update
 ```
 
 <!--At this point, you would also notice a change in your *Cargo.lock* file noting that the version of the `rand` crate you are now using is `0.8.4`.  -->
-이 시점에서, 당신은 또한 *Cargo.lock* 파일에서 현재 사용중인 `rand` 크레이트의 버전이 `0.8.4` 임을 알 수 있습니다.
+이 시점에서, 여러분은 또한 *Cargo.lock* 파일에서 현재 사용중인 `rand` 크레이트의 버전이 `0.8.4` 임을 알 수 있습니다.
 <!--If you wanted to use `rand` version `0.9.0` or any version in the `0.9.x` series, you’d have to update the *Cargo.toml* file to look like this instead:  -->
-만약 당신이 `rand` `0.9.0` 버전 또는 `0.9.x` 시리즈의 다른 버전의 사용을 원한다면 당신은 *Cargo.toml* 파일을 다음과 같이 업데이트 해야합니다.
+만약 여러분이 `rand` `0.9.0` 버전 또는 `0.9.x` 시리즈의 다른 버전의 사용을 원한다면 여러분은 *Cargo.toml* 파일을 다음과 같이 업데이트 해야합니다.
 
 ```toml 
 [dependencies] 
@@ -525,9 +525,9 @@ rand = "0.9.0"
 ``` 
  
 <!--The next time you run `cargo build`, Cargo will update the registry of crates available and reevaluate your `rand` requirements according to the new version you have specified. -->
-다음으로 당신이 `cargo build`를 실행하면, Cargo는 사용 가능한 크레이트의 레지스트리를 업데이트하고 지정한 새 버전에 따라 `rand` 필요 사항을 재평가(reevaluate)합니다.
+다음으로 여러분이 `cargo build`를 실행하면, Cargo는 사용 가능한 크레이트의 레지스트리를 업데이트하고 지정한 새 버전에 따라 `rand` 필요 사항을 재평가(reevaluate)합니다.
 <!--There’s a lot more to say about [Cargo][doccargo] and [its ecosystem][doccratesio] which we’ll discuss in Chapter 14, but for now, that’s all you need to know-->
-[Cargo][doccargo]와 [Cargo 생태계][doccratesio]에 대한 좀 더 자세한 이야기는 14 장에서 논의될 것이지만, 지금은 당신은 이정도 까지만 알아도 됩니다.
+[Cargo][doccargo]와 [Cargo 생태계][doccratesio]에 대한 좀 더 자세한 이야기는 14 장에서 논의될 것이지만, 지금은 여러분은 이정도 까지만 알아도 됩니다.
 <!--Cargo makes it very easy to reuse libraries, so Rustaceans are able to write smaller projects that are assembled from a number of packages. -->
 Cargo를 사용하면 라이브러리를 매우 쉽게 재사용 할 수 있으므로, Rust 사용자들(Rustaceans)은 여러 패키지들로 구성된 소규모 프로젝트를 작성할 수 있습니다.
 
@@ -572,13 +572,13 @@ Cargo를 사용하면 라이브러리를 매우 쉽게 재사용 할 수 있으�
 <!--Alternatively, we could pass the range `1..=100`, which is equivalent. -->
 대안적으로 우리는 동등하다는 `1..=100` 범위를 보낼 수 있습니다.
 <!-- > Note: You won’t just know which traits to use and which methods and functions to call from a crate-->
-> 참고 : 당신은 어떤 속성을 사용할지, 어떤 메서드와 함수를 크레이트에서 호출해야하는지 알 수 없습니다.
+> 참고 : 여러분은 어떤 속성을 사용할지, 어떤 메서드와 함수를 크레이트에서 호출해야하는지 알 수 없습니다.
 <!-- > Instructions for using a crate are in each crate’s documentation-->
 > 크레이트 사용을 위한 지침은 각 크레이트 문서 안에 있습니다.
 <!-- > Another neat feature of Cargo is that you can run the `cargo doc --open` command, which will build documentation provided by all of your dependencies locally and open it in your browser-->
 > Cargo의 또 다른 멋진 기능은`cargo doc --open` 명령을 실행하여 모든 의존성에서 제공하는 문서를 로컬로 빌드하고 브라우저에서 열 수 있다는 것입니다.
 <!-- > If you’re interested in other functionality in the `rand` crate, for example, run `cargo doc --open` and click `rand` in the sidebar on the left. -->
-> 만약 당신이 예를 들어`rand` 상자의 다른 기능에 관심이있는 경우`cargo doc --open`을 실행하고 왼쪽 사이드 바에서`rand`를 클릭합니다.
+> 만약 여러분이 예를 들어`rand` 상자의 다른 기능에 관심이있는 경우`cargo doc --open`을 실행하고 왼쪽 사이드 바에서`rand`를 클릭합니다.
 <!--The second line that we added to the middle of the code prints the secret number-->
 코드 중간에 추가한 두 번째 줄은 비밀 번호를 출력합니다.
 <!--This is useful while we’re developing the program to be able to test it, but we’ll delete it from the final version-->
@@ -617,7 +617,7 @@ Please input your guess.
 ``` 
  
 <!--You should get different random numbers, and they should all be numbers between 1 and 100-->
-당신은 다른 임의의 숫자들을 얻었을 것입니다. 그리고, 그들은 모두 1과 100 사이에 있는 숫자일 겁니다. 
+여러분은 다른 임의의 숫자들을 얻었을 것입니다. 그리고, 그들은 모두 1과 100 사이에 있는 숫자일 겁니다. 
 <!--Great job! -->
 잘했어요!
 <!--## Comparing the Guess to the Secret Number -->
@@ -641,7 +641,7 @@ Please input your guess.
 <!--Like `Result`, `Ordering` is another enum, but the variants for `Ordering` are `Less`, `Greater`, and `Equal`-->
 `Result`와 마찬가지로 `Ordering`은 또 다른 enum이지만, `Ordering`의 변형은 `Less`,`Greater` 및 `Equal`입니다.
 <!--These are the three outcomes that are possible when you compare two values. -->
-이것들은 세 가지의 결과로 그것은 당신으 두 값을 비교할 때 가능한 것입니다.
+이것들은 세 가지의 결과로 그것은 여러분으 두 값을 비교할 때 가능한 것입니다.
 <!--Then we add five new lines at the bottom that use the `Ordering` type-->
 그런 다음 `Ordering` 타입을 사용하는 5 개의 새 줄을 맨 아래에 추가합니다.
 <!--The `cmp` method compares two values and can be called on anything that can be compared-->
@@ -728,7 +728,7 @@ let guess: u32 = guess.trim().parse().expect("Please type a number!");
 <!-- It does, but Rust allows us to *shadow* the previous value of `guess` with a new one-->
 그렇다. 그러나, Rust는 추측의 이전 값을 새 값으로 *shadow* 하도록 허용한다.
 <!--This feature is often used in situations in which you want to convert a value from one type to another type-->
-이 기능은 당신이 값을 하나의 타입에서 다른 타입으로 변환하기를 원할 때 종종 사용된다.
+이 기능은 여러분이 값을 하나의 타입에서 다른 타입으로 변환하기를 원할 때 종종 사용된다.
 <!--Shadowing lets us reuse the `guess` variable name rather than forcing us to create two unique variables, such as `guess_str` and `guess` for example. (Chapter 3 covers shadowing in more detail.) -->
 Shadowing을 사용하면 예를 들어 추측 문자열 변수 및 추측 숫자 변수와 같은 두 개의 고유한 변수를 만들지 않고 추측 변수 이름을 재사용 할 수 있습니다. (3 장에서는 Shadowing에 대해 자세히 다룹니다.)
 <!--We bind `guess` to the expression `guess.trim().parse()`-->
@@ -758,7 +758,7 @@ Rust에는 몇 가지 기본 제공 숫자 유형이 있습니다. 여기에 표
 <!--It’s a good default choice for a small positive number-->
 그것은 작은 양수에 대한 좋은 기본 선택입니다.
 <!--You’ll learn about other number types in Chapter 3-->
-당신은 장 3에서 다른 숫자 타입들에 대해서 배울 것입니다.
+여러분은 장 3에서 다른 숫자 타입들에 대해서 배울 것입니다.
 <!--Additionally, the `u32` annotation in this example program and the comparison with `secret_number` means that Rust will infer that `secret_number` should be a `u32` as well-->
 추가적으로 이 예제 프로그램에서 `u32` 주석과 비밀번호와 비교는 Rust가 비밀번호 역시 `u32` 임을 추론해야함을 의미합니다. 
 <!--So now the comparison will be between two values of the same type!-->
@@ -820,7 +820,7 @@ Too big!
 ``` 
  
 <!--As you can see, we’ve moved everything into a loop from the guess input prompt onward-->
-당신이 볼 수 있듯이, 우리는 추측 입력 프롬프트에서 모든 것을 반복문으로 옮겼습니다.
+여러분이 볼 수 있듯이, 우리는 추측 입력 프롬프트에서 모든 것을 반복문으로 옮겼습니다.
 <!--Be sure to indent the lines inside the loop another four spaces each and run the program again-->
 반복문 안의 줄을 각각 4 칸씩 들여 쓰기하고 프로그램을 다시 실행하십시오.
 <!--Notice that there is a new problem because the program is doing exactly what we told it to do: ask for another guess forever! It doesn’t seem like the user can quit! -->
@@ -980,13 +980,13 @@ You win!
 ## 요약
  
 <!--At this point, you’ve successfully built the guessing game-->
-이 시점에서 당신은 성공적으로 추측 게임을 빌드 했을겁니다.
+이 시점에서 여러분은 성공적으로 추측 게임을 빌드 했을겁니다.
 <!--Congratulations!  -->
 축하해요!
 <!--This project was a hands-on way to introduce you to many new Rust concepts: `let`, `match`, methods, associated functions, the use of external crates, and more-->
 이 프로젝트는 'let', 'match', 메서드, 관련 함수, 외부 크레이트 사용 등 많은 새로운 Rust 개념을 소개하는 실습 방법이었습니다.
 <!--In the next few chapters, you’ll learn about these concepts in more detail-->
-다음으로 오는 몇개의 장에서는 당신은 이 개념들을 좀 더 자세히 배우게 될 것입니다.
+다음으로 오는 몇개의 장에서는 여러분은 이 개념들을 좀 더 자세히 배우게 될 것입니다.
 <!--Chapter 3 covers concepts that most programming languages have, such as variables, data types, and functions, and shows how to use them in Rust-->
 장 3장은 대부분의 프로그래밍 언어들이 가지고 있는 변수, 데이터 타입, 함수 등 개념을 소개하고 Rust에서의 사용법을 다룹니다.
 <!--Chapter 4 explores ownership, a feature that makes Rust different from other languages-->
