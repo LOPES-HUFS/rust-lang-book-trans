@@ -9,9 +9,9 @@
 <!-- > Note: This book assumes basic familiarity with the command line. -->
 Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니다.
 <!-- > Rust makes no specific demands about your editing or tooling or where your code lives, so if you prefer to use an integrated development environment (IDE) instead of the command line, feel free to use your favorite IDE. -->
-러스트는 너의 코드가 어디에서 작성되는지 또는 어떤 편집기를 쓰는지 또는 어떤 도구를 사용하는지에 대한 구체적인 요구사항이 없기에, 만약 당신이 커맨드 라인 대신 통합 개발 환경(IDE)를 사용하는 것을 더 선호한다면 자유롭게 당신의 가장 선호하는 IDE를 사용해도 좋습니다.
+러스트는 여러분의 편집기나 도구 또는 여러분의 코드가 어디에 있는지에 대한 구체적인 요구사항이 없기에, 만약 여러분이 커맨드 라인 대신 '통합 개발 환경(integrated development environment(IDE))'를 사용하는 것을 더 선호한다면, 자유롭게 여러분이 선호하는 IDE를 사용해도 좋습니다.
 <!-- > Many IDEs now have some degree of Rust support; check the IDE’s documentation for details. -->
-많은 IDE들은 이제 어느정도 러스트 언어를 지원한다. 세부사항들은 해당 IDE 들의 문서를 확인하기 바랍니다.
+많은 IDE들이 이제 어느 정도 러스트 언어를 지원합니다; (번역자 주: 그렇다 하더라도) 세부적으로(for details) 해당 IDE들의 문서를 확인하기 바랍니다.
 <!-- > Recently, the Rust team has been focusing on enabling great IDE support, and progress has been made rapidly on that front! -->
 최근에 러스트 팀은 대부분의 IDE 지원을 가능하게 하는데 초점을 맞추고 있고, 최전선에서 빠르게 발전하고 있습니다.
 
@@ -20,12 +20,12 @@ Note: 이 책은 커맨트 라인에 대한 기본적인 숙지를 가정합니�
 <!-- You’ll start by making a directory to store your Rust code. -->
 여러분은 여러분의 러스트 코드을 저장하기 위한 디렉토리를 만드는 것부터 시작할 것입니다.
 <!--It doesn’t matter to Rust where your code lives, but for the exercises and projects in this book, we suggest making a *projects* directory in your home directory and keeping all your projects there.-->
-여러분의 코드가 어디에서 살고 있는지 러스트에는 중요하진 않지만, 그러나 프로젝트들과 훈련들을 위해서 이 책에서는, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 어러분의 모든 프로젝트들을 거기에 유지하는 제안합니다.
+여러분의 코드가 어디에 있는지 러스트에게는 중요하진 않지만, 그러나 이 책에 있는 프로젝트들과 연습(exercise)들을 위해서, 우리는 여러분의 홈(home) 디렉토리에 *projects* 라는 디렉토리를 만들고, 여러분의 모든 프로젝트들을 거기에 유지하는 것을 제안합니다.
 
 <!--Open a terminal and enter the following commands to make a *projects* directory and a directory for the “Hello, world!” project within the *projects* directory.-->
-터미널을 열고 아래의 커맨드들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
+터미널을 열고 아래 명령어들을 입력해 *projects* 디렉토리를 만들고 “Hello, world!” 프로젝트를 위한 디렉토리를 *projects* 디렉토리 안에 만들어 줍니다.
 <!--For Linux, macOS, and PowerShell on Windows, enter this:-->
-Linux, macOS 그리고 윈도우 PowerShell 에서 다음 명령어를 입력해주세요:
+Linux, macOS 그리고 윈도우 PowerShell에서 다음 명령어를 입력해주세요:
 
 ```console
 $ mkdir ~/projects
@@ -47,15 +47,15 @@ $ cd hello_world
 ### 러스트 프로그램의 작성과 실행
 
 <!--Next, make a new source file and call it *main.rs*.-->
-다음으로 새로운 소스 파일*main.rs*을 만들어 봅시다.
+다음으로 새로운 소스 파일을 만들고 이 파일을 *main.rs*이라고 이름을 붙입니다.
 <!--Rust files always end with the *.rs* extension.-->
 러스트 파일들은 언제나 끝에 *.rs* 확장자를 붙여줍니다.
 <!--If you’re using more than one word in your filename, use an underscore to separate them.-->
-만약 당신이 너의 파일 이름에 하나의 단어 이상을 사용한다면, 밑줄을 사용하여 그것들을 구분하면 됩니다.
+만약 여러분이 여러분의 파일 이름에 하나 이상의 단어를 사용한다면, 밑줄을 사용하여 단어들을 구분하면 됩니다.
 <!--For example, use *hello_world.rs* rather than *helloworld.rs*.-->
-예를 들면, *helloworld.rs* 보다는 *hello_world.rs*를 사용하는게 낫습니다.
+예를 들어, *helloworld.rs* 보다는 *hello_world.rs*를 사용하세요.
 <!--Now open the *main.rs* file you just created and enter the code in Listing 1-1.-->
-이제 당신이 방금 막 만든 *main.rs* 파일을 열고 1-1dml 코드 리스트를 입력해봅시다.
+이제 여러분이 방금 만든 *main.rs* 파일을 열고 (번역자 주: 아래) 1-1에 열거된 코드를 입력해 봅시다.
 
 <span class="filename">Filename: main.rs</span>
 
@@ -70,7 +70,7 @@ fn main() {
 <!--Save the file and go back to your terminal window.-->
 파일을 저장하고 당신의 터미널 윈도우로 돌아갑니다.
 <!--On Linux or macOS, enter the following commands to compile and run the file:-->
-리눅스나 맥 OS에선 파일을 컴파일하고 실행하기 위해서 아래의 명령어들을 따라쳐 줍니다.
+리눅스나 맥 OS에선, 파일을 컴파일하고 실행하기 위해서 아래의 명령어들을 입력합니다.
 
 ```console
 $ rustc main.rs
@@ -88,7 +88,7 @@ Hello, world!
 ```
 
 <!--Regardless of your operating system, the string `Hello, world!` should print to the terminal.-->
-당신의 OS 시스템에 관계없이 문자 `Hello, world!` 는 터미널에 출력될 것입니다.
+여러분의 '운영 체계(operating system)'에 관계없이, 문자열 (string) `Hello, world!`이 터미널에 출력될 것입니다.
 <!--If you don’t see this output, refer back to the[“Troubleshooting”][troubleshooting]<!-- ignore --> part of the Installation section for ways to get help.-->
 만약 당신이 이 결과물이 보이지 않는다면 도움을 얻기위한 방법으로 설치 파트의 [“Troubleshooting”] 섹션을 참조하면 됩니다.
 <!--If `Hello, world!` did print, congratulations!-->
@@ -221,19 +221,19 @@ $ ./main # or .\main.exe on Windows
 만약 *main.rs*가 여러분은 “Hello, world!” 프로그램이라면, 이 줄은 당신의 터미널에 `Hello, world!`를 출력할 것입니다.
 
 <!--If you’re more familiar with a dynamic language, such as Ruby, Python, or JavaScript, you might not be used to compiling and running a program as separate steps.-->
-만약 당신이 좀 더 동적 언어(루비, 파이썬, 자바스크립트 와 같은)에 친밀하다면, 당신은 아마도 프로그램을 컴파일링과 실행하는 단계로 구분하는데에 익숙하지 않을 것입니다.
+만약 여러분이 좀 더 동적(dynamic) 언어, 예를 들어 루비, 파이썬, 자바스크립트 와 같은 언어에 친밀하다면, 아마도 프로그램을 컴파일(compiling)과 실행(running)하는 별도의 단계로 구분하는데에 익숙하지 않을 수도 있습니다.
 <!--Rust is an *ahead-of-time compiled* language, meaning you can compile a program and give the executable to someone else, and they can run it even without having Rust installed.-->
-러스트는 사전에 컴파일된(*ahead-of-time compiled*) 언어로 당신이 프로그램을 컴파일 하고 누군가에게 실행파일을 주고나면, 그들은 러스트의 설치 없이도 실행할 수 있다는 것을 의미합니다.
+러스트는 '사전에 컴파일된(*ahead-of-time compiled*)' 언어인데, 이는 여러분이 프로그램을 컴파일하고 누군가에게 그 실행파일을 줄 수 있으면, 그들은 러스트를 설치하지 않고도 이를 실행할 수 있다는 것을 의미합니다.
 <!--If you give someone a *.rb*, *.py*, or *.js* file, they need to have a Ruby, Python, or JavaScript implementation installed (respectively).-->
-만약 당신이 누군가에게 *.rb*, *.py*, or *.js* 파일을 준다면, 그들은 루비, 파이썬, 자바스크립트를 이행하기 위해 개별적으로 설치를 해야할 필요가 있습니다.
+만약 여러분이 누군가에게 *.rb*, *.py*, or *.js* 파일을 준다면, 그들은 루비, 파이썬, 자바스크립트를 이행하기 위해 개별적으로 설치를 해야할 필요가 있습니다.
 <!--But in those languages, you only need one command to compile and run your program.-->
-그러나 그 언어들에서는 당신은 당신의 프로그램을 컴파일하고 실행하는데 오직 하나의 명령어만 필요로할 것입니다.
+그러나 이런 언어들에서는, 여러분은 당신의 프로그램을 컴파일하고 실행하는데 오직 하나의 명령어만 필요로할 것입니다.
 <!--Everything is a trade-off in language design.-->
 모든 것은 언어 디자인 안에서의 상쇄작용입니다.
 
 <!--Just compiling with `rustc` is fine for simple programs, but as your project grows, you’ll want to manage all the options and make it easy to share your code.-->
 `rustc`와 함께 컴파일링 하는 것은 단일 프로그램에서 적당합니다만, 당신의 프로젝트가 성장한다면, 당신은 모든 선택사항을 관리하고, 당신의 코드를 공유할 수 있어야만 합니다.
-<!--Next, we’ll introduce you to the Cargo tool, which will help you write real-world Rust programs.
-다음으로 우리는 실제적인 러스트 프로그램들을 작성하는데 당신을 도와줄 수 있는 Cargo 라는 도구를 당신에게 소개할 것입니다.-->
+<!--Next, we’ll introduce you to the Cargo tool, which will help you write real-world Rust programs.-->
+다음으로, 우리는 여러분이 현실-세계 러스트 프로그램들을 작성하는데 도움을 줄 수 있는 Cargo 라는 도구를 여러분에게 소개할 것입니다.
 
 [troubleshooting]: ch01-01-installation.html#troubleshooting
