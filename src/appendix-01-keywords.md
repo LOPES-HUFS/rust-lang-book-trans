@@ -98,5 +98,5 @@ fn main() {
 <!--In addition, raw identifiers allow you to use libraries written in a different Rust edition than your crate uses-->
 <!--For example, `try` isn’t a keyword in the 2015 edition but is in the 2018 edition-->
 <!--If you depend on a library that’s written using the 2015 edition and has a `try` function, you’ll need to use the raw identifier syntax, `r#try` in this case, to call that function from your 2018 edition code-->
-<!--See [Appendix E][appendix-e]<!-- ignore --> for more information on editions.  -->
+<!--See [Appendix E][appendix-e] for more information on editions.  -->
 [appendix-e]: appendix-05-editions.html 
