@@ -23,4 +23,5 @@
 > 대부분의 키워드는 특정한 기능을 의미하며, 이후 러스트 프로그램에서 다양하게 사용해볼 예정입니다.
 <!--You can find a list of the keywords in [Appendix A][appendix_a].-->
 > 키워드 목록은 [부록 A][appendix_a]에서 찾을 수 있습니다.
+
 [appendix_a]: appendix-01-keywords.md 
