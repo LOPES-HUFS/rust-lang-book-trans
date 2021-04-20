@@ -10,8 +10,8 @@
 <!--Specifically, you’ll learn about variables, basic types, functions, comments, and control flow-->
 구체적으로 우리는 변수, 기본 타입, 함수, 주석, 제어문에 대해 배울 것입니다.
 <!--These foundations will be in every Rust program, and learning them early will give you a strong core to start from. -->
+이런 기초 개념들은 러스트 프로그램을 작성할 때도 필수적으로 사용되기 때문에 이들을 미리 배우는 것은 차후의 단단한 밑거름이 될 것입니다.
 
- 
 <!-- #### Keywords -->
 > #### 키워드
 
