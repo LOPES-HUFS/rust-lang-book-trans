@@ -10,17 +10,17 @@
 <!--Specifically, you’ll learn about variables, basic types, functions, comments, and control flow-->
 구체적으로 우리는 변수, 기본 타입, 함수, 주석, 제어문에 대해 배울 것입니다.
 <!--These foundations will be in every Rust program, and learning them early will give you a strong core to start from. -->
-이런 기초 개념들은 러스트 프로그램을 작성할 때도 필수적으로 사용되기 때문에 이들을 미리 배우는 것은 차후의 단단한 밑거름이 될 것입니다.
+이런 기초 개념들은 러스트 프로그램에서도 필히 사용되기 때문에 이들을 미리 배우는 것은 차후의 단단한 밑거름이 될 것입니다.
 
 <!-- #### Keywords -->
 > #### 키워드
 
 <!-- The Rust language has a set of *keywords* that are reserved for use by > the language only, much as in other languages-->
-
+> 러스트 언어는 다른 언어들과 마찬가지로 사용가능한 *키워드* 모음이 있습니다.
 <!-- Keep in mind that you cannot > use these words as names of variables or functions-->
-
+> 키워드는 함수나 변수의 이름으로 사용할 수 없다는 것을 명심하세요.
 <!-- Most of the keywords have > special meanings, and you’ll be using them to do various tasks in your Rust > programs; a few have no current functionality associated with them but have > been reserved for functionality that might be added to Rust in the future-->
-
+> 대부분의 키워드는 특정한 기능을 의미하며, 이후 러스트 프로그램에서 다양하게 사용해볼 예정입니다.
 <!--You can find a list of the keywords in [Appendix A][appendix_a].-->
-
+> 키워드 목록은 [부록 A][appendix_a]에서 찾을 수 있습니다.
 [appendix_a]: appendix-01-keywords.md 
