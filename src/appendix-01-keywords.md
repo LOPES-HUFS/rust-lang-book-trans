@@ -2,7 +2,7 @@
  
 <!--The following list contains keywords that are reserved for current or future use by the Rust language-->
 <!--As such, they cannot be used as identifiers (except as raw identifiers as we’ll discuss in the “[Raw -->
-<!--Identifiers][raw-identifiers]<!-- ignore -->” section), including names of functions, variables, parameters, struct fields, modules, crates, constants, macros, static values, attributes, types, traits, or lifetimes.  -->
+<!--Identifiers][raw-identifiers]” section), including names of functions, variables, parameters, struct fields, modules, crates, constants, macros, static values, attributes, types, traits, or lifetimes.  -->
 [raw-identifiers]: #raw-identifiers 
  
 <!--### Keywords Currently in Use -->
@@ -67,7 +67,7 @@ fn match(needle: &str, haystack: &str) -> bool {
 } 
 ``` 
  
-you’ll get this error: 
+<!--you’ll get this error: -->
  
 ```text 
 error: expected identifier, found keyword `match` 
