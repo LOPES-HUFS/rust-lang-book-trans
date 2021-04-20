@@ -14,6 +14,7 @@
 
  
 <!-- #### Keywords -->
+#### 키워드
 
 <!-- The Rust language has a set of *keywords* that are reserved for use by > the language only, much as in other languages-->
 
