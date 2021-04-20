@@ -1,15 +1,15 @@
 <!--# Common Programming Concepts -->
-
+# 일반적인 프로그래밍 개념들
  
 <!--This chapter covers concepts that appear in almost every programming language and how they work in Rust-->
-
+이 장에서는 대부분의 프로그래밍 언어에서 사용하는 공통 개념들이 무엇인지, 또 그 개념들이 러스트에서는 어떻게 사용되는지에 대해서 다룹니다.
 <!--Many programming languages have much in common at their core-->
-
+많은 프로그래밍 언어들의 핵심 개념은 비슷합니다.
 <!--None of the concepts presented in this chapter are unique to Rust, but we’ll discuss them in the context of Rust and explain the conventions around using these concepts. -->
- 
+러스트만이 가진 고유 특성들은 제외하고 설명하지만, 공통 개념들이 러스트에
  
 <!--Specifically, you’ll learn about variables, basic types, functions, comments, and control flow-->
-
+구체적으로 우리는 변수, 기본 타입, 함수, 주석, 제어문에 대해 배울 것입니다.
 <!--These foundations will be in every Rust program, and learning them early will give you a strong core to start from. -->
 
  
