@@ -5,6 +5,7 @@
 아래의 목록은 러스트에서 사용할 키워드입니다.
 <!--As such, they cannot be used as identifiers (except as raw identifiers as we’ll discuss in the “[Raw Identifiers][raw-identifiers]” section), including names of functions, variables, parameters, struct fields, modules, crates, constants, macros, static values, attributes, types, traits, or lifetimes.-->
 따라서 아래의 키워드들은 함수, 변수, 파라미터, 구조체 필드, 모듈, 크레이트, 상수, 매크로, 정적 변수, 속성, 타입, 트레잇, 라이프타임의 이름으로 사용할 수 없습니다. (아래에서 논의할 로우(raw) 식별자가 붙은 경우는 제외됩니다.)
+
 [raw-identifiers]: #raw-identifiers 
  
 <!--### Keywords Currently in Use -->
