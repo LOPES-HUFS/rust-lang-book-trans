@@ -130,16 +130,16 @@ fn main() {
 <!--This code will compile without any errors-->
 위 코드는 오류 없이 컴파일 될 것입니다.
 <!--Note the `r#` prefix on the function name in its definition as well as where the function is called in `main`.  -->
-
+`main` 함수에서도 키워드 앞에 `r#` 접두사가 붙는다는 것을 기억하세요.
 <!--Raw identifiers allow you to use any word you choose as an identifier, even if that word happens to be a reserved keyword-->
-로우(raw) 식별자는 예비 키워드를 포함한 어떤 키워드도 이름으로 사용할 수 있도록 도와줍니다.
+로우(raw) 식별자를 사용하면 예비 키워드를 포함한 어떤 키워드도 이름으로 선택할 수 있습니다.
 <!--In addition, raw identifiers allow you to use libraries written in a different Rust edition than your crate uses-->
-게다가, 로우(raw) 식별자는 러스트의 다른 버전에서도 
+게다가, 로우(raw) 식별자는 러스트의 다른 버전에서 생성된 라이브러리도 사용할 수 있게 도와줍니다.
 <!--For example, `try` isn’t a keyword in the 2015 edition but is in the 2018 edition-->
 예를 들어, `try`는 2015년 버전에서는 키워드가 아니었지만, 2018년도에서는 키워드가 되었다고 가정합시다.
 <!--If you depend on a library that’s written using the 2015 edition and has a `try` function, you’ll need to use the raw identifier syntax, `r#try` in this case, to call that function from your 2018 edition code-->
 만약 2015 버전에서 만들어진 라이브러리 내부 코드에 `try` 함수가 있다면, 2018년 버전에서는 `r#try`로 사용해야 합니다.
 <!--See [Appendix E][appendix-e] for more information on editions.  -->
-러스트 버전에 대해 자세히 알고 싶다면 [부록 E][appendix-e]
+러스트 버전에 대해 자세히 알고 싶다면 [부록 E][appendix-e]를 참고하세요.
 
 [appendix-e]: appendix-05-editions.html 
