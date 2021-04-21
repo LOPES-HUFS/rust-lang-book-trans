@@ -17,29 +17,41 @@
 <!-- * `as` - perform primitive casting, disambiguate the specific trait containing an item, or rename items in `use` and `extern crate` statements-->
 * `as` - 형변환을 수행하고, 항목을 포함하는 특정 트레잇을 명확하게 하거나,`use` 및`extern crate` 구문에서 항목 이름을 바꿉니다.
 <!-- * `async` - return a `Future` instead of blocking the current thread -->
-* `async` - 
+* `async` - 현재 스레드를 차단하는 대신 'Future'를 반환합니다.
 <!--* `await` - suspend execution until the result of a `Future` is ready -->
-* `await` -
+* `await` - 'Future'이 준비될 때까지 실행을 중지합니다.
 <!--* `break` - exit a loop immediately -->
-* `break` - 
+* `break` - 루프를 바로 빠져나갑니다.
 <!--* `const` - define constant items or constant raw pointers -->
-* `const` - 상수 또는  상수 로우 포인터 정의합니다.
+* `const` - 상수 또는 상수 로우 포인터 정의합니다.
 <!-- * `continue` - continue to the next loop iteration -->
 * `continue` - 다음 반복 루프로 넘어갑니다.
 <!--* `crate` - link an external crate or a macro variable representing the crate in which the macro is defined -->
 * `crate`
 <!--* `dyn` - dynamic dispatch to a trait object -->
+
 <!--* `else` - fallback for `if` and `if let` control flow constructs  -->
+
 <!--* `enum` - define an enumeration -->
+
 <!--* `extern` - link an external crate, function, or variable -->
+
 <!--* `false` - Boolean false literal -->
+
 <!--* `fn` - define a function or the function pointer type -->
+* `fn` - 함수나 함수 포인터 타입을 정의합니다.
 <!--* `for` - loop over items from an iterator, implement a trait, or specify a   higher-ranked lifetime -->
+* `for` - 반복자의 항목을 반복하거나, 트레잇을 구현하거나, 더 높은 수준의 라이프타임을 명시합니다.
 <!--* `if` - branch based on the result of a conditional expression -->
+
 <!--* `impl` - implement inherent or trait functionality -->
+
 <!--* `in` - part of `for` loop syntax -->
+* `in` - `for`루프 문법의 일부로 사용합니다.
 <!--* `let` - bind a variable -->
+
 <!--* `loop` - loop unconditionally -->
+
 <!--* `match` - match a value to patterns -->
 
 <!--* `mod` - define a module -->
@@ -57,9 +69,11 @@
 <!--* `true` - Boolean true literal -->
 <!--* `type` - define a type alias or associated type -->
 <!--* `union` - define a [union] and is only a keyword when used in a union declaration -->
-<!--* `unsafe` - denote unsafe code, functions, traits, or implementations * `use` - bring symbols into scope -->
+<!--* `unsafe` - denote unsafe code, functions, traits, or implementations -->
+<!--* `use` - bring symbols into scope -->
 <!--* `where` - denote clauses that constrain a type -->
-<!--* `while` - loop conditionally based on the result of an expression  -->
+<!--* `while` - loop conditionally based on the result of an expression -->
+
 [union]: ../reference/items/unions.html 
  
 <!--### Keywords Reserved for Future Use -->
@@ -130,7 +144,7 @@ fn main() {
 <!--This code will compile without any errors-->
 위 코드는 오류 없이 컴파일 될 것입니다.
 <!--Note the `r#` prefix on the function name in its definition as well as where the function is called in `main`.  -->
-`main` 함수에서도 키워드 앞에 `r#` 접두사가 붙는다는 것을 기억하세요.
+`main` 함수에서도 이름 앞에 `r#` 접두사가 붙는다는 것을 기억하세요.
 <!--Raw identifiers allow you to use any word you choose as an identifier, even if that word happens to be a reserved keyword-->
 로우(raw) 식별자를 사용하면 예비 키워드를 포함한 어떤 키워드도 이름으로 선택할 수 있습니다.
 <!--In addition, raw identifiers allow you to use libraries written in a different Rust edition than your crate uses-->
