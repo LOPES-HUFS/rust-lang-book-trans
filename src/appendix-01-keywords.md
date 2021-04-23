@@ -63,7 +63,7 @@
 <!--* `pub` - denote public visibility in struct fields, `impl` blocks, or modules -->
 * `pub` -
 <!--* `ref` - bind by reference -->
-* `ref` -
+* `ref` - 레퍼런스로 바인딩합니다.
 <!--* `return` - return from function -->
 * `return` - 함수로부터 결과를 반환합니다.
 <!--* `Self` - a type alias for the type we are defining or implementing -->
@@ -79,9 +79,9 @@
 <!--* `trait` - define a trait -->
 * `trait` - 트레잇을 정의합니다.
 <!--* `true` - Boolean true literal -->
-* `true` - 부
+* `true` - 불리언 타입의 True를 선언합니다.
 <!--* `type` - define a type alias or associated type -->
-* `type` - 타입
+* `type` - 
 <!--* `union` - define a [union] and is only a keyword when used in a union declaration -->
 * `union` -
 <!--* `unsafe` - denote unsafe code, functions, traits, or implementations -->
