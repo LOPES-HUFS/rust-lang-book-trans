@@ -27,11 +27,11 @@
 <!-- * `continue` - continue to the next loop iteration -->
 * `continue` - 다음 반복 루프로 넘어갑니다.
 <!--* `crate` - link an external crate or a macro variable representing the crate in which the macro is defined -->
-* `crate` -
+* `crate` - 외부 크레이트나 크레이트를 대표하는 매크로 변수를 링크합니다.
 <!--* `dyn` - dynamic dispatch to a trait object -->
-* `dyn` -
+* `dyn` - 
 <!--* `else` - fallback for `if` and `if let` control flow constructs  -->
-* `else` - 
+* `else` - `if`와 `if let` 에서 제외된 경우를 나타낼 때 사용합니다.
 <!--* `enum` - define an enumeration -->
 * `enum` - 
 <!--* `extern` - link an external crate, function, or variable -->
