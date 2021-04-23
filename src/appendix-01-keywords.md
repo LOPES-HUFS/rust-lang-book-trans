@@ -55,7 +55,7 @@
 <!--* `match` - match a value to patterns -->
 * `match` -
 <!--* `mod` - define a module -->
-* `mod` -
+* `mod` - 모듈을 정의합니다.
 <!--* `move` - make a closure take ownership of all its captures -->
 * `move` - 
 <!--* `mut` - denote mutability in references, raw pointers, or pattern bindings -->
@@ -65,23 +65,23 @@
 <!--* `ref` - bind by reference -->
 * `ref` -
 <!--* `return` - return from function -->
-* `return` -
+* `return` - 함수로부터 결과를 반환합니다.
 <!--* `Self` - a type alias for the type we are defining or implementing -->
 * `Self` -
 <!--* `self` - method subject or current module -->
-* `self` -
+* `self` - 
 <!--* `static` - global variable or lifetime lasting the entire program execution -->
 * `static` -
 <!--* `struct` - define a structure -->
-* `struct` -
+* `struct` - 구조체를 정의합니다.
 <!--* `super` - parent module of the current module -->
 * `super` -
 <!--* `trait` - define a trait -->
-* `trait` -
+* `trait` - 트레잇을 정의합니다.
 <!--* `true` - Boolean true literal -->
-* `true` -
+* `true` - 부
 <!--* `type` - define a type alias or associated type -->
-* `type` -
+* `type` - 타입
 <!--* `union` - define a [union] and is only a keyword when used in a union declaration -->
 * `union` -
 <!--* `unsafe` - denote unsafe code, functions, traits, or implementations -->
