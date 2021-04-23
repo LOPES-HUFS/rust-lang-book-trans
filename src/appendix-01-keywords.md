@@ -27,52 +27,71 @@
 <!-- * `continue` - continue to the next loop iteration -->
 * `continue` - 다음 반복 루프로 넘어갑니다.
 <!--* `crate` - link an external crate or a macro variable representing the crate in which the macro is defined -->
-* `crate`
+* `crate` -
 <!--* `dyn` - dynamic dispatch to a trait object -->
-
+* `dyn` -
 <!--* `else` - fallback for `if` and `if let` control flow constructs  -->
-
+* `else` - 
 <!--* `enum` - define an enumeration -->
-
+* `enum` - 
 <!--* `extern` - link an external crate, function, or variable -->
-
+* `extern` -
 <!--* `false` - Boolean false literal -->
-
+* `false` -
 <!--* `fn` - define a function or the function pointer type -->
 * `fn` - 함수나 함수 포인터 타입을 정의합니다.
 <!--* `for` - loop over items from an iterator, implement a trait, or specify a   higher-ranked lifetime -->
 * `for` - 반복자의 항목을 반복하거나, 트레잇을 구현하거나, 더 높은 수준의 라이프타임을 명시합니다.
 <!--* `if` - branch based on the result of a conditional expression -->
-
+* `if` -
 <!--* `impl` - implement inherent or trait functionality -->
-
+* `impl` -
 <!--* `in` - part of `for` loop syntax -->
 * `in` - `for`루프 문법의 일부로 사용합니다.
 <!--* `let` - bind a variable -->
-
+* `let` -
 <!--* `loop` - loop unconditionally -->
-
+* `loop` -
 <!--* `match` - match a value to patterns -->
-
+* `match` -
 <!--* `mod` - define a module -->
+* `mod` -
 <!--* `move` - make a closure take ownership of all its captures -->
+* `move` - 
 <!--* `mut` - denote mutability in references, raw pointers, or pattern bindings -->
+* `mut` -
 <!--* `pub` - denote public visibility in struct fields, `impl` blocks, or modules -->
+* `pub` -
 <!--* `ref` - bind by reference -->
+* `ref` -
 <!--* `return` - return from function -->
+* `return` -
 <!--* `Self` - a type alias for the type we are defining or implementing -->
+* `Self` -
 <!--* `self` - method subject or current module -->
+* `self` -
 <!--* `static` - global variable or lifetime lasting the entire program execution -->
+* `static` -
 <!--* `struct` - define a structure -->
+* `struct` -
 <!--* `super` - parent module of the current module -->
+* `super` -
 <!--* `trait` - define a trait -->
+* `trait` -
 <!--* `true` - Boolean true literal -->
+* `true` -
 <!--* `type` - define a type alias or associated type -->
+* `type` -
 <!--* `union` - define a [union] and is only a keyword when used in a union declaration -->
+* `union` -
 <!--* `unsafe` - denote unsafe code, functions, traits, or implementations -->
+* `unsafe` -
 <!--* `use` - bring symbols into scope -->
+* `use` -
 <!--* `where` - denote clauses that constrain a type -->
+* `where` -
 <!--* `while` - loop conditionally based on the result of an expression -->
+* `while` -
 
 [union]: ../reference/items/unions.html 
  
