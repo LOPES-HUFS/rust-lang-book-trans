@@ -121,7 +121,7 @@
 <!--*Raw identifiers* are the syntax that lets you use keywords where they wouldn’t normally be allowed-->
 로우(raw) 식별자는 일반적으로 허락되지 않은 키워드들을 사용할 수 있도록 해주는 문법입니다.
 <!--You use a raw identifier by prefixing a keyword with `r#`.  -->
-`#r`는 로우(raw) 식별자의 앞 글자를 의미하며, 사용하려는 키워드 앞에 붙여 사용할 수 있습니다.
+`r#`는 로우(raw) 식별자의 앞 글자를 의미하며, 사용하려는 키워드 앞에 붙여 사용할 수 있습니다.
 <!--For example, `match` is a keyword-->
 예를 들어, `match`는 키워드입니다.
 <!--If you try to compile the following function that uses `match` as its name: -->
