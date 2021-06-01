@@ -1,27 +1,28 @@
 en, ko
+allocation, 할당
 argument, 인수
 call, 이름을 붙입니다.
 chapter, 장
 classic, 클래식
 command, 명령어
+create, 생성하다.
+drop, 제거하다.
 enter, 입력하다.
 executable, 실행 파일
 exercise, 연습
 fix, 고치다.
 for details, 세부적으로
+goes out of scope, 범위 밖으로 벗어나다.
+growable, 늘릴 수 있는
+mutable, 변경 가능한
+nothing happens, 아무 일도 발생하지 않는다.
+parameter, 매개변수
 PowerShell, 파워쉘
 prelude, 예약어
 prompt, 프롬프트
+scope, 범위
 set up, 설정하다.
 space, 공백
 user, 사용자
+variant, 열것값
 you, 여러분
-allocation, 할당
-mutable, 변경 가능한
-growable, 늘릴 수 있는
-create, 생성하다.
-scope, 범위
-drop, 제거하다.
-goes out of scope, 범위 밖으로 벗어나다.
-nothing happens, 아무 일도 발생하지 않는다.
-parameter, 매개변수
