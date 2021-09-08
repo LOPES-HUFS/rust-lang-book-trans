@@ -1,4 +1,5 @@
 en, ko
+accept, 수용하다.
 allocation, 할당
 argument, 인수
 call, 이름을 붙입니다.
@@ -14,15 +15,21 @@ fix, 고치다.
 for details, 세부적으로
 goes out of scope, 범위 밖으로 벗어나다.
 growable, 늘릴 수 있는
+idiomatic, 관용적인
+lifetime, 수명
 mutable, 변경 가능한
 nothing happens, 아무 일도 발생하지 않는다.
+ownership, 소유권
 parameter, 매개변수
 PowerShell, 파워쉘
 prelude, 예약어
 prompt, 프롬프트
+restriction, 제약
+return, 반환하다.
 scope, 범위
 set up, 설정하다.
 space, 공백
+straightforward, 직접적으로
 user, 사용자
 variant, 열것값
 you, 여러분
