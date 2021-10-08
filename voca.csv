@@ -3,6 +3,7 @@ accept, 수용하다.
 allocation, 할당
 argument, 인수
 boundary, 경계
+by default, 기본적으로
 call, 이름을 붙입니다.
 cargo, 카고
 chapter, 장
@@ -19,6 +20,7 @@ create, 생성하다.
 drop, 제거하다.
 ensure, 보장하다.
 enter, 입력하다.
+enums, 열거형
 executable, 실행 파일
 exercise, 연습
 explicitly, 명시적으로
@@ -28,8 +30,10 @@ goes out of scope, 범위 밖으로 벗어나다.
 groups, 무리로 만들다.
 growable, 늘릴 수 있는
 idiomatic, 관용적인
+idiomatic, 관용적인
 immutable, 변경 불가능한
 implementation details, 구현하는 항목들
+library, 라이브러리
 lifetime, 수명
 manage, 관리하다.
 method, 메소드
@@ -56,6 +60,7 @@ scope, 범위
 set up, 설정하다.
 set, 집합
 space, 공백
+standard, 표준
 straightforward, 직접적으로
 trait, 트레이트
 user, 사용자
