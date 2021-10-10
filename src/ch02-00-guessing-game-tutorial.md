@@ -61,7 +61,7 @@ src/main.rs 파일을 살펴봅시다.
 ```console
 {{#include ../listings/ch02-guessing-game-tutorial/no-listing-01-cargo-new/output.txt}} 
 ```
-
+<!-- TODO: 여기까지 진행 -->
 The `run` command comes in handy when you need to rapidly iterate on a project, as we’ll do in this game, quickly testing each iteration before moving on to the next one.
 `run` 명령어는 우리가 다음 단계로 넘어가기 전에 각 반복을 빠르게 테스팅 하는 것을 이 게임에서 하는 것처럼 프로젝트를 빠르게 반복해야 할 때 유용합니다.
 <!--Reopen the *src/main.rs* file-->
@@ -97,7 +97,7 @@ Listing 2-1의 코드를 *src/main.rs* 에 작성하십시오.
 ```
 
 By default, Rust brings only a few types into the scope of every program in [the *prelude*][prelude]<!-- ignore -->
-기본적으로 Rust는 범위(scope)에 [예약어 (the *prelude*)][prelude]안 모든 프로그램의 오직 몇 가지 타입만 가져옵니다.
+기본적으로, 러스트는 [예약어 (the *prelude*)][prelude]안에서 오직 몇 가지 타입만을 모든 프로그램의 범위로 가져옵니다.
 <!--If a type you want to use isn’t in the prelude, you have to bring that type into scope explicitly with a `use` statement-->
 만약 여러분이 사용하기를 원하는 타입이 예약어(prelude) 안에 없다면, 여러분은 `use` 문을 사용하여 해당하는 타입을 명시적으로 범위 안으로 가져와야 합니다.
 <!--Using the `std::io` library provides you with a number of useful features, including the ability to accept user input. -->
@@ -254,21 +254,21 @@ Rust는 표준 라이브러리에 `Result`라는 이름의 여러 유형(types)�
 
 [ioresult]: ../std/io/type.Result.html
 [result]: ../std/result/enum.Result.html
- 
+
 <!--The `Result` types are [*enumerations*][enums]<!-- ignore -->, often referred to as *enums*-->
 `Result` 유형들은 [열거형](*enumerations*)[enums]이라하며 종종, *enums*라 부르기도 합니다.
 <!--An enumeration is a type that can have a fixed set of values, and those values are called the enum’s *variants*-->
-열거형은 고정된 값의 집합들을 가질 수 있는 유형이며, 그 값들은 열거형의 *변형* 이라고 부릅니다.
+열거형은 고정된 값의 집합들을 가질 수 있는 유형이며, 그 값들은 열거형의 *열것값(variants)* 이라고 부릅니다.
 <!--Chapter 6 will cover enums in more detail. -->
 장 6에서 좀 더 자세히 열거형(enums)에 대해 다룰 것입니다.
-[enums]: ch06-00-enums.html 
- 
+[enums]: ch06-00-enums.html
+
 <!--For `Result`, the variants are `Ok` or `Err`-->
-`Result`의 경우 그 변형은 `Ok` or `Err` 입니다.
+`Result`의 경우 그 열것값은 `Ok` or `Err` 입니다.
 <!--The `Ok` variant indicates the operation was successful, and inside `Ok` is the successfully generated value-->
-`Ok` 변형은 작업이 성공했음을 나타내고, `Ok` 안에는 성공적으로 생성 된 값이 있습니다.
+`Ok` 열것값은 작업이 성공했음을 나타내고, `Ok` 안에는 성공적으로 생성 된 값이 있습니다.
 <!--The `Err` variant means the operation failed, and `Err` contains information about how or why the operation failed. -->
-`Err` 변형은 작업이 실패함을 의미하고 `Err`에는 어떻게 또는 왜 작업이 실패한지에 대한 정보가 포함됩니다.
+`Err` 열것값은 작업이 실패함을 의미하고 `Err`에는 어떻게 또는 왜 작업이 실패한지에 대한 정보가 포함됩니다.
 <!--The purpose of these `Result` types is to encode error-handling information-->
 이 `Result` 유형의 목적은 오류 처리(error-handling) 정보를 인코딩하는 것입니다.
 <!--Values of the `Result` type, like values of any type, have methods defined on them-->
@@ -639,7 +639,7 @@ Please input your guess.
 <!--The first new bit here is another `use` statement, bringing a type called `std::cmp::Ordering` into scope from the standard library-->
 여기서 첫 번째 새로운 부분은 또 다른 `use` 문으로 `std :: cmp :: Ordering`이라는 타입을 표준 라이브러리에서 범위로 가져옵니다.
 <!--Like `Result`, `Ordering` is another enum, but the variants for `Ordering` are `Less`, `Greater`, and `Equal`-->
-`Result`와 마찬가지로 `Ordering`은 또 다른 enum이지만, `Ordering`의 변형은 `Less`,`Greater` 및 `Equal`입니다.
+`Result`와 마찬가지로 `Ordering`은 또 다른 enum이지만, `Ordering`의 열것값은 `Less`,`Greater` 및 `Equal`입니다.
 <!--These are the three outcomes that are possible when you compare two values. -->
 이것들은 세 가지의 결과로 그것은 여러분으 두 값을 비교할 때 가능한 것입니다.
 <!--Then we add five new lines at the bottom that use the `Ordering` type-->
@@ -649,9 +649,9 @@ Please input your guess.
 <!--It takes a reference to whatever you want to compare with: here it’s comparing the `guess` to the `secret_number`-->
 이것은 비교하려는 항목에 대한 참조가 필요합니다. 여기서 추측을 비밀번호와 비교합니다.
 <!--Then it returns a variant of the `Ordering` enum we brought into scope with the `use` statement-->
-그런 다음 그것은 우리가 `use` 문을 사용하여 범위로 가져온 `Ordering` 열거형(enum)의 변형을 반환합니다.
+그런 다음 그것은 우리가 `use` 문을 사용하여 범위로 가져온 `Ordering` 열거형(enum)의 열것값을 반환합니다.
 <!--We use a [`match`][match]expression to decide what to do next based on which variant of `Ordering` was returned from the call to `cmp` with the values in `guess` and `secret_number`. -->
-우리는 [`match`] [match] 표현식을 사용하여 추측 및 비밀번호의 값과 함께 `cmp` 호출에서 반환 된 `Ordering`의 변형에 기반하여 다음에 수행 할 작업을 결정합니다.
+우리는 [`match`] [match] 표현식을 사용하여 추측 및 비밀번호의 값과 함께 `cmp` 호출에서 반환 된 `Ordering`의 열것값에 기반하여 다음에 수행 할 작업을 결정합니다.
 [match]: ch06-02-match.html 
  
 <!--A `match` expression is made up of *arms*-->
@@ -774,9 +774,9 @@ Rust에는 몇 가지 기본 제공 숫자 유형이 있습니다. 여기에 표
 <!--We’ll treat this `Result` the same way by using the `expect` method again-->
 우리는 다시 `expect` 메소드를 사용하여 이 결과를 동일한 방식으로 처리합니다.
 <!--If `parse` returns an `Err` `Result` variant because it couldn’t create a number from the string, the `expect` call will crash the game and print the message we give it-->
-만약 `parse`가 문자열로부터 숫자를 생성할 수 없기에 `Err` `Result` 변형을 반환한다면, `expect` 호출은 게임을 중단하고 우리가 제공 한 메시지를 출력합니다.
+만약 `parse`가 문자열로부터 숫자를 생성할 수 없기에 `Err` `Result` 열것값을 반환한다면, `expect` 호출은 게임을 중단하고 우리가 제공 한 메시지를 출력합니다.
 <!--If `parse` can successfully convert the string to a number, it will return the `Ok` variant of `Result`, and `expect` will return the number that we want from the `Ok` value. -->
-만약 `parse`가 문자열로부터 숫자를 성공적으로 변환했다면, 그것은 `Ok` `Result` 변형을 반환할 것이고, `expect` 호출은 `Ok` 값에서 원하는 숫자를 반환합니다.
+만약 `parse`가 문자열로부터 숫자를 성공적으로 변환했다면, 그것은 `Ok` `Result` 열것값을 반환할 것이고, `expect` 호출은 `Ok` 값에서 원하는 숫자를 반환합니다.
 <!--Let’s run the program now! -->
 이제 프로그램을 실행해 봅시다.
 <!-- manual-regeneration 
@@ -903,7 +903,7 @@ note: run with `RUST_BACKTRACE=1` environment variable to display a backtrace
 <!--Switching from an `expect` call to a `match` expression is how you generally move from crashing on an error to handling the error-->
 `expect` 호출에서 `match` 표현식으로 전환하는 것은 일반적으로 오류 발생시 충돌하는 것에서 오류 처리로 이동하는 방법입니다.
 <!--Remember that `parse` returns a `Result` type and `Result` is an enum that has the variants `Ok` or `Err`-->
-`parse`가 `Result` 타입을 반환하는 것과 `Result`는`Ok` 또는`Err` 변형이 있는 열거 형임을 기억하십시오.
+`parse`가 `Result` 타입을 반환하는 것과 `Result`는`Ok` 또는`Err`이라는 열것값을 가지고 있는 열거형임을 기억하십시오.
 <!--We’re using a `match` expression here, as we did with the `Ordering` result of the `cmp` method. -->
 우리는 여기서 `cmp` 메소드의 `Ordering` 결과와 마찬가지로 `match` 표현식을 사용했습니다.
 <!--If `parse` is able to successfully turn the string into a number, it will return an `Ok` value that contains the resulting number-->
