@@ -1,28 +1,41 @@
 en, ko
 accept, 수용하다.
 access, 접근하다.
+advisable, 바람직한
 allocation, 할당
+appropriate, 적절한
 appropriately, 적절하게 
 argument, 인수
+body, 본체
 boundary, 경계
 bug, 버그
 by default, 기본적으로
 call, 이름을 붙입니다.
 cargo, 카고
 chapter, 장
+check, 점검하다.
 classic, 클래식
 closure, 클로저
 command, 명령어
 common, 일반적인
 concise, 간결한
 concurrency, 동시성
+consequence, 결과
 constant, 상수
 contain, 포함하다.
+contradictory, 모순되는
 control, 통제하다
 convention, 관례
+correct, 올바른
 crate, 크레이트
 create, 생성하다.
+definitely, 단호하게
+dictate, 에 영향을 주다.
+dire, 끔직한
+documentation, 문서화
 drop, 제거하다.
+encounter, 부딪히다.
+enhancement, 강화
 ensure, 보장하다.
 enter, 입력하다.
 entirely, 완전히
@@ -31,29 +44,46 @@ executable, 실행 파일
 execution, 실행
 exercise, 연습
 explicitly, 명시적으로
+failure, 오류
 fix, 고치다.
 for details, 세부적으로
 goes out of scope, 범위 밖으로 벗어나다.
 groups, 무리로 만들다.
 growable, 늘릴 수 있는
 handle, 핸들
-idiomatic, 관용적인
+handy, 쓸모가 있는
+helper, 조력자
 idiomatic, 관용적인
 immutable, 변경 불가능한
+impact, 충격을 주다.
 implement, 구현하다.
 implementation details, 구현하는 항목들
 index, 인덱스
+inspect, 점검하다.
+instances, 인스턴스
+instead, 그 대신에
+intent, 의도
+invalid, 타당하지 않은
 library, 라이브러리
 lifetime, 수명
+look at, 을 살펴보자.
+make sense, 이치에 맞다
 manage, 관리하다.
 method, 메소드
+missing, 행방불명된
 module, 모듈
 mutable, 변경 가능한
 nothing happens, 아무 일도 발생하지 않는다.
+occasionally, 우연하게
+operation, 작용
 optionally, 선택적으로
 organize, 정리하다.
 ownership, 소유권
 parameter, 매개변수
+pass, 학생에게 답안지를 돌려주다 pass the papers back to one's pupils
+performance, 성능
+possibility, 가능성
+potentially, 잠재적으로
 PowerShell, 파워쉘
 prelude, 전주
 primitive, 원시적
@@ -62,8 +92,12 @@ private, 프라이빗
 prompt, 프롬프트
 provide, 제공하다.
 readability, 읽기 쉬움
+receive, 받다.
 refer to, 참조하다.
 related, 관련된
+rely, 기대를 걸다 You can rely on her word
+request, 요청
+requirement, 요구사항
 restriction, 제약
 return, 반환하다.
 robust, 탄탄하게
@@ -72,12 +106,24 @@ scope, 범위
 serious, 심각한
 set up, 설정하다.
 set, 집합
+signal, 신호로 일리다.
+smart, 영리하다.
 space, 공백
 standard, 표준
 straightforward, 직접적으로
+tedious, 장황한
+thereby, 이것에 의해 그 때문에
+they, 그 사람 문법적으로 he she it을 사용해야 하나 다수를 의식하고 성 구분을 피하기 위해 they를 사용
 trait, 트레이트
+unrecoverable, 회복불가능한
 user, 사용자
+validation, 타당성 검사
 variant, 열것값
 verbose, 장황한
+versus, 에 대하여
+violate, 위반하다.
 vulnerability, 취약성
+wrap, 싸다.
 you, 여러분
+inevitable, 피할 수 없는
+reliable, 신뢰할 수 있는
